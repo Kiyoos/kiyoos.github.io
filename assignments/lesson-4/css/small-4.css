@@ -1,0 +1,17 @@
+body {
+	background-color: #ff3e8;
+}
+
+header {
+	margin: 10px auto;
+	background-color: #2d882d;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+	text-align: center;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
