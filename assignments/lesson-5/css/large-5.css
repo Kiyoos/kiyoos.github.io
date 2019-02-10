@@ -1,0 +1,90 @@
+.largenav, .fiveday, /*.forecast,*/ .current  {
+  display: none;
+}
+
+/* Large devices (laptops/desktops, 992px and up) from W3 Schools*/
+@media only screen and (min-width: 992px) {
+  nav ul { 
+    height: 15%;
+  }
+
+  nav li { 
+    display: inline-block;
+    width: 15%;
+    /*border: 2px solid red;*/
+  }
+   /*nav a { padding: 10px; }*/
+
+/*This code is to override the 
+  dropdown menu on a smaller display*/
+
+.largenav {
+  display: inline-block;
+}
+.smallnav {
+  display:none;
+}
+/* this code is for the bottom contact and map */
+
+.map-contact {
+  display: flex;
+  height: 200px;
+  background: #9bc2c2;
+  color: #004400;
+}
+.address, .map{
+  display: inline-block;
+  margin: 0px auto;
+  padding: 15px;
+  width: 60%;
+  height: 150px;
+}
+
+.address {
+  padding-left: 150px;
+
+}
+
+.address {order: 2;}
+.map  {order: 1;}
+
+/*this code is for the 5-day forcast */
+
+.current {
+  display: block;
+  float:right;
+  margin: 10px;
+  padding: 20px;
+  width: 150px;
+}
+
+.fiveday {
+  display: block;
+  margin: 10px;
+  width: 95%;
+  text-align: center;
+  color: #004400;
+}
+
+.forecast {
+  display: block;
+  max-height: 100px;
+  width: 350px;
+}
+
+h5 {
+  font-size: 2em;
+}
+
+article {
+  max-width: 960px;
+  clear: left;
+}
+
+.articleimg {
+  float: right;
+  max-width: 50%;
+  padding: 10px;
+}
+
+}
