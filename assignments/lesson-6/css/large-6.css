@@ -1,0 +1,105 @@
+.fiveday, .current  {
+  display: none;
+}
+
+/* Large devices (laptops/desktops, 992px and up) from W3 Schools*/
+@media only screen and (min-width: 64em) {
+* {
+  max-width: 1400px;
+}
+.current {
+  display: block;
+  float:right;
+  background-color: rgba(0,0,0,0.2);
+  margin: .5vw;
+}
+
+.currenttext {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 2.2vw 1vw 0 0;
+}
+
+img.currentpic {
+  float:left;
+  margin: 1vw;
+  max-width: 150px;
+}
+
+nav button { display:none; }
+
+nav ul { 
+  margin-left: 2%;
+}
+
+nav ul.hide {display:block;}
+
+nav ul li { 
+  float: left;
+}
+nav ul li a { 
+  border: none; 
+  border-right: 1px solid rgba(0,0,0,0.3);
+  padding:  .8rem 1rem;
+}
+
+/* this code is for the bottom contact and map */
+
+.map-address {
+  display: flex;
+  background: #9bc2c2;
+  color: #004400;
+}
+.address, .map{
+  width: 24vw;
+  height: 16vw;
+}
+
+.map {
+  float: left;
+}
+
+address {
+  padding-top: 50px;
+}
+
+address {order: 2;}
+.map  {order: 1;}
+
+/*this code is for the 5-day forcast */
+
+.fiveday {
+  display: block;
+  /*margin: 10px;*/
+  width: 50vw;
+  /*text-align: center;*/
+  color: #004400;
+}
+table {
+  margin: 2vw auto;
+}
+
+table, th, td {
+  border: 1px solid #004400;
+  border-collapse: collapse;
+  text-align: center;
+  color: #004400;
+}
+
+th, td {
+  width: 10vw;
+}
+
+.forecast {
+  display: block;
+  max-height: 100px;
+  width: 350px;
+}
+
+.articleimg {
+  float: right;
+  width: 50%;
+  /*padding: 2vw;*/
+}
+
+}
