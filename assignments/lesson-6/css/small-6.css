@@ -116,6 +116,9 @@ h2 {
     padding: 20px 0 20px;
 }
 
+.title-author {
+    margin: 1em;
+}
 article {
     width: 80vw;
     padding: 2vw;
@@ -150,9 +153,13 @@ address, img.map{
     padding: 1em;
 }
 
+#pageowner {
+    padding: 10px 0 10px 0;
+    font-size: 1em;
+}
 
-#pageowner{
-    padding: 0 0 10px 0;
+#currentdate {
+    font-size: 1em;
 }
 
 /*code from w3schools with my flare thrown in :)
