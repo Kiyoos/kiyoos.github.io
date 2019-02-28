@@ -1,0 +1,222 @@
+/*--Top of Small CSS code--*/
+* {
+    margin: 0 auto;
+    font-size: 1rem;
+}
+body {
+	background-color: #fff3e8; 
+    font-family: Calibri, sans-serif;
+    color: rgb(36, 37, 63);
+}
+
+header {
+    display: inline-flex;
+    flex-flow: nowrap;
+    background-color: #2d882d;
+    color: #fff3e8; 
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    padding: 0px;
+    font-family: 'PT Serif', Georgia, serif;
+    position: relative;
+}
+
+.logo {
+    margin: 1vw 0 0 1vw;
+    max-width: 90px;
+}
+
+h1 {
+    padding: 30px 0px 0px 0px;
+    order: 1;
+}
+
+h1, .motto {
+    margin: 0px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.motto {
+    font-style: italic;
+}
+
+/*---Navigation Syling---*/
+
+nav button {
+    /*width: 100%;*/
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: rgba(0,0,0,0.5);
+}
+
+nav{
+    background: #9bc2c2;
+    font-family: 'PT Serif', Georgia, serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    }  
+
+nav ul.hide, #readmore.hide {display:none;}
+
+nav ul li a {
+    display: flex;
+    flex-flow: column;
+    padding: .8rem 2%;
+    text-decoration: none;
+    text-align: center;
+    color: #004400;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li .active {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff3e8;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+    color: #fff3e8;
+}
+
+
+.weather {
+    position: relative;
+    top: 10px;
+    width:100%;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    min-width: 150px;
+    padding: 0 15px 0;
+    background-color: rgb(45, 136, 45,0.5);
+    color: #fff3e8; 
+}
+
+.townpic {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: 'PT Serif', Georgia, serif;
+    text-align: center;
+    color: #004400;
+    padding: 20px 0 20px;
+}
+
+.title-author {
+    margin: 1em;
+}
+article {
+    width: 80%;
+    padding: 2vw;
+}
+.articletext {
+    padding: 2vw;
+}
+.articleimg {
+    width: 100%;
+}
+
+.map-address {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: #9bc2c2;
+    color: #004400;
+    width:100%;
+}
+
+footer {
+    text-align: center;
+    background: #407F7F;
+    color: #004400;
+}
+
+.map {
+    width:50%;
+}
+
+address, .map{
+    padding: 1em;
+    max-width: 300px;
+}
+
+#pageowner {
+    padding: 10px 0 10px 0;
+    font-size: 1em;
+}
+
+#currentdate {
+    font-size: 1em;
+}
+
+/*code from w3schools with my flare thrown in :)
+    this is for the dropdown menu*/
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background: #9bc2c2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu:hover .menu-content {
+    display: block;
+}
+
+.menu-content a {
+    text-align: center;
+}
+  
+.menu-content a:hover { 
+    background-color: #407F7F
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-gap:.25em;
+    margin: 25px;
+}
+
+.gallery img {
+    max-width: 100%;
+}
+
+.polaroid {
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin-bottom: 25px;
+}
+.polaroid:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.imagecaption {
+    padding: 1em;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'PT Serif', Georgia, serif;
+    color: #004400;
+}
+
+/*---Clearfix: Force an Elemennt not to collapse ---*/
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}

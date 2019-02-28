@@ -1,0 +1,31 @@
+table, th, tr, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+   /* height: 30px;*/
+    padding: 7px;
+}
+
+table {
+    background-color: #7fb9c2;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+.standout {
+    background-color: #628ca6;
+    color:white;
+}
+#title {
+    font-size: 1.5em;
+}
+
+table tfoot {
+    font-size: .75em;
+}

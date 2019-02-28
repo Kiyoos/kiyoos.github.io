@@ -1,0 +1,69 @@
+.fiveday, .current  {
+  display: none;
+}
+
+/* Large devices*/
+@media only screen and (min-width: 64em) {
+* {
+  max-width: 1200px;
+}
+         
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.current {
+  display: block;
+  float:right;
+  background-color: rgba(0,0,0,0.2);
+  margin: .5vw;
+}
+
+.currenttext {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 2.2vw 1vw 0 0;
+}
+
+img.currentpic {
+  float:left;
+  margin: 1vw;
+  max-width: 150px;
+}
+/*this code is for the 5-day forcast */
+
+.fiveday {
+  display: block;
+  /*margin: 10px;*/
+  width: 50vw;
+  /*text-align: center;*/
+  color: #004400;
+}
+table {
+  margin: 2vw auto;
+}
+
+table, th, td {
+  border: 1px solid #004400;
+  border-collapse: collapse;
+  text-align: center;
+  color: #004400;
+}
+
+th, td {
+  width: 10vw;
+}
+
+.forecast {
+  display: block;
+  max-height: 100px;
+  width: 350px;
+}
+
+.articleimg {
+  float: right;
+  width: 50%;
+  /*padding: 2vw;*/
+}
+
+}
