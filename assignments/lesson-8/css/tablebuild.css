@@ -3,12 +3,12 @@ table, th, tr, td {
     border-collapse: collapse;
     text-align: center;
     font-family: "Ubuntu", sans-serif;
-   /* height: 30px;*/
     padding: 7px;
 }
 
 table {
     background-color: #7fb9c2;
+    box-shadow: 5px 5px 20px #628ca6;
 }
 
 table tbody tr:nth-child(even) {
@@ -16,6 +16,10 @@ table tbody tr:nth-child(even) {
 }
 table tbody tr:nth-child(odd) {
     background-color: #e7f0ed;
+}
+
+table tbody :nth-child(5) :first-child {
+    font-style: italic
 }
 
 .standout {
