@@ -36,19 +36,110 @@
         </nav>
         <main>
             <h2>Weather it's Fun Storm Center</h2>
-            <form>
-                <input type="text" name="name" required>
-                <input type="email" name="email">
-                <input type="tel" name="telephone" required>
-                <input type="number" name="zipcode" required>
-                <input type="date" name="date">
-                <input type="list" name="stormtype">
-                <input type="range" name="stormseverity">
-                <input type="select" name="stormregion">
-                <input type="radio" name="dangerlevel">
-                <input type="textarea" name="additionalcomments">
-                <input type="submit" name="submit">
-            </form>
+            <p>Please let us know about storm activity in your area by giving information below.</p>
+            <div class="container">
+                <form id="stormreport" action="../lesson-8/thanks.html">
+                    <p>Fields marked with <span class="required">*</span> are required.</p>
+                    <div id="contactinfo">
+                        <h3>Contact Information</h3>
+                        <div class="row">
+                            <div class="columnleft">
+                                <label for="name">Full Name<span class="required">*</span>: </label>
+                            </div>
+                            <div class="columnright">
+                                <input class="contactinput" type="text" name="name" pattern="[A-za-z].{5,}" id="name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="columnleft">
+                                <label for="email">Email: </label>
+                            </div>
+                            <div class="columnright">
+                                <input type="email" name="email" id="email" placeholder="example@email.com">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="columnleft">
+                                <label for="telephone">Telephone<span class="required">*</span>: </label>
+                            <div class="columnright">
+                                <input type="tel" name="telephone" id="telephone" required>
+                            </div>
+                        </div>
+                        <div class="row">    
+                            <div class="columnleft">
+                                <label for="zipcode">Zip Code<span class="required">*</span>: </label>
+                            </div>
+                            <div class="columnright">
+                                <input type="number" name="zipcode" id="zipcode" required>
+                            </div>  
+                        </div>
+                    </div>
+                    <div id="storminformation">
+                        <h3>Storm Information</h3>
+                        <div class="row">
+                            <div class="columnleft">
+                                <label>Date: </label>
+                            </div>
+                            <div class="columnright">
+                                <input type="date" name="date" id="date">
+                            </div>
+                        </div>
+                        <div class="storminfo">
+                            <div class="columnleft">
+                                <label for="stormtype">Storm Type: </label>
+                            </div>
+                            <div class="columnright">
+                                <input list="stormtype" name="stormtype">
+                                <datalist id="stormtype">
+                                    <option value="Flash Flood">
+                                    <option value="Hail">
+                                    <option value="Hurricane">
+                                    <option value="Thunderstorm"> 
+                                    <option value="Tornado">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="storminfo">
+                            <div class="columnleft">
+                                <label for="stormseverity">Storm Severity on a scale of 1 to 10: </label>
+                                <p id="severity"></p>
+                            </div>
+                            <div class="columnright">
+                                <input type="range" name="stormseverity" id="stormseverity" min="1" max="10" onchange="adjustSeverity(this.value)">
+                            </div>
+                        </div>
+                        <div class="storminfo">
+                            <div class="columnleft">
+                                <label for="stormregion">Storm Region:</label> 
+                            </div>
+                            <div class="columnright">
+                                <select id="stormtype" name="stormregion" id="stormregion">
+                                    <option selected="true" disabled="disabled">Select Region...</option>
+                                    <option value="Preston">Preston</option>
+                                    <option value="Soda Springs">Soda Springs</option>
+                                    <option value="Fish Haven">Fish Haven</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="stormlevel">
+                            <div class="dangerlevel">
+                                    <p>Danger Level:</p> 
+                                    <input type="radio" name="dangerlevel" id="yes" value="yes">
+                                    <label for="yes">Yes</label>
+                                    <input type="radio" name="dangerlevel" id="no" value="no">
+                                    <label for="no">No</label>
+                                    <input type="radio" name="dangerlevel" id="maybe" value="maybe">
+                                    <label for="maybe">Maybe</label>
+                            </div>
+                        </div>
+                        <div class="storminfo">
+                            <label for="additionalinfo">Additional Information:</label> 
+                            <textarea name="additionalinfo" rows="4" cols="40"></textarea>
+                        </div>
+                    </div>
+                        <input type="submit" name="submit">
+                </form>
+            </div>
         </main>
         <footer>
             <div class="map-address">
@@ -66,5 +157,6 @@
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
+        <script src="scripts/value.js"></script>
     </body>
 </html>

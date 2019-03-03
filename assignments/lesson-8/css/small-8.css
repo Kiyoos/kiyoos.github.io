@@ -165,7 +165,7 @@ address, .map{
 
 /*code from w3schools with my flare thrown in :)
     this is for the dropdown menu*/
-
+/*
 .menu-content {
     display: none;
     position: absolute;
@@ -184,7 +184,7 @@ address, .map{
   
 .menu-content a:hover { 
     background-color: #407F7F
-}
+}*/
 
 .gallery {
     display: grid;
@@ -203,9 +203,7 @@ address, .map{
     border: 1px solid lightgrey;
     margin-bottom: 25px;
 }
-.polaroid:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 .imagecaption {
     padding: 1em;
     font-size: 1em;
@@ -213,6 +211,63 @@ address, .map{
     font-family: 'PT Serif', Georgia, serif;
     color: #004400;
 }
+
+#severity {
+    display: inline-block;
+}
+
+.required {
+    color: red;
+}
+
+#stormreport {
+    font-size: 1.1em;
+}
+
+/*form formatting*/
+
+form, form p {
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'PT Serif', Georgia, serif;
+    margin: 5px auto;
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /*resize: vertical;*/
+  }
+
+.storminformation, .contactinfo {
+    padding: 2px;
+}
+
+.dangerlevel input {
+    border: 1px solid red;
+    display: inline-block;
+    width: 25px;
+}
+
+label, .dangerlevel, .dangerlevel p {
+    font-size: 1.1em;
+}
+.dangerlevel, .dangerlevel p {
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+#thankyou{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 400px;
+    padding: 15px;
+
+    }
 
 /*---Clearfix: Force an Elemennt not to collapse ---*/
 .clearfix:after {
