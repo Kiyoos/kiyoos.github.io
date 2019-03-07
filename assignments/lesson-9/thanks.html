@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Thank You</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Storm Center Reporting Thank You Page">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">  
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo_resized_100.png" alt="Weather it's Fun Logo">
+            <div>
+                <h1>Weather it's Fun</h1>
+                <div class="motto">We make weather fun.</div>
+            </div>
+            <div class="current">
+                <img class="currentpic clearfix" src="images/currentweather_resized.jpg" alt='current weather'>            
+                <p class="currenttext">Current Weather</p>
+            </div>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="hamburgermenu" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="../lesson-9/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson-9/stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="../lesson-9/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Thank you!</h2>
+            <img src="images/thankyou.jpg" alt="Thank you" id="thankyou">
+        </main>
+        <footer>
+            <div class="map-address">
+                <address>
+                    Weather it's Fun<br>
+                    123 Some Street<br>
+                    Preston, Idaho 83263<br>
+                    <br>
+                    Phone: 208-555-1234<br>
+                    Email: <a href="mailto:mail@weatheritsfun.com">mail@weatheritsfun.com</a> 
+                </address>
+                <img class="map" src="images/idahomap_600_minimum.jpg" alt="Map of Preston">
+            </div>
+            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders | Weather it's Fun</p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/value.js"></script>
+    </body>
+</html>

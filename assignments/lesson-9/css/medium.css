@@ -1,0 +1,77 @@
+.fiveday, .current  {
+    display: none;
+  }
+  
+  /* medium devices*/
+@media only screen and (min-width: 650px) {
+            
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav button { display:none; }
+    
+    nav ul { 
+        margin-left: 2%;
+    }
+    
+    nav ul.hide {display:inline-flex;}
+    
+    nav ul li { 
+        display: inline-flex;
+        flex-flow: nowrap;
+    }
+    nav ul li a { 
+        border: none; 
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding:  .8rem 1rem;
+    }
+    
+    /* this code is for the bottom contact and map */
+    
+    .map-address {
+        display: flex;
+        flex-flow: wrap;
+        background: #9bc2c2;
+        color: #004400;
+    }
+    
+    address {order: 2;}
+    .map  {order: 1;}
+    
+    /*this code is for the 5-day forcast */
+    
+    .fiveday {
+        display: block;
+        width: 50vw;
+        color: #004400;
+    }
+    table {
+        margin: 2vw auto;
+    }
+    
+    table, th, td {
+        border: 1px solid #004400;
+        border-collapse: collapse;
+        text-align: center;
+        color: #004400;
+    }
+    
+    th, td {
+        width: 10vw;
+    }
+    
+    .forecast {
+        display: block;
+        max-height: 100px;
+        width: 350px;
+    }
+    
+    .articleimg {
+        float: right;
+        width: 50%;
+        /*padding: 2vw;*/
+    }
+
+  }
