@@ -31,8 +31,8 @@ html {
   /* section styles */
   
   section article {
-    width: 33%;
-    float: left;
+    display: inline-flex;
+    flex-wrap: wrap;
   }
   
   section p {
