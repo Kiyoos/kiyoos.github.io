@@ -2,9 +2,9 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Thank You</title>
+        <title>Home Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Storm Center Reporting Thank You Page">
+        <meta name="description" content="Weather it's Fun Home Page">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">  
@@ -18,25 +18,38 @@
                 <h1>Weather it's Fun</h1>
                 <div class="motto">We make weather fun.</div>
             </div>
-            <div class="current">
-                <img class="currentpic clearfix" src="images/currentweather_resized.jpg" alt='current weather'>            
-                <p class="currenttext">Current Weather</p>
-            </div>
         </header>
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="hamburgermenu" class="hide">
-                <li><a href="../lesson-9/index.html">Home</a></li>
+                <li><a href="../lesson-9/index.html"  class="active"">Home</a></li>
                 <li><a href="../lesson-9/preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="../lesson-9/stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="../lesson-9/stormcenter.html">Storm Center</a></li>
                 <li><a href="../lesson-9/gallery.html">Gallery</a></li>
             </ul>
         </nav>
         <main>
-            <h2>Thank you!</h2>
-            <img src="images/thankyou.jpg" alt="Thank you" id="thankyou">
+            <h2>Bringing the weather to you.</h2>
+            <div class="weather">
+                <picture>
+                    <source srcset="images/mountains800.jpg" media="(max-width: 750px)">                    
+                    <img class="townpic" src="images/mountains1200.jpg" alt="Fog in the Mountains">
+                </picture>
+            </div>
+            <section class="towndata">
+            </section>
+            <div class="spotlight">
+                <div>
+                    <h2><a href="../lesson-9/stormcenter.html">Storm Center</a></h2>
+                    <p>Have you noticed any storms in the area? You may report them on our Storm Center page.</p>
+                </div>
+                <picture>
+                    <source srcset="images/weather-lightning400.jpg" media="(max-width: 64em)">
+                    <img src="images/weather-lightning800.jpg" alt="Lightning Storm">
+                </picture>
+            </div>
         </main>
         <footer>
             <div class="map-address">
@@ -54,6 +67,7 @@
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/value.js"></script>
+        <script src="scripts/towninfo.js"></script>
+        <script src="scripts/towninfo.js"></script>
     </body>
 </html>

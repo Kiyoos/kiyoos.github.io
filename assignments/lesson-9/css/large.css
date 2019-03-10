@@ -4,71 +4,109 @@
 
 /* Large devices*/
 @media only screen and (min-width: 64em) {
-* {
-  max-width: 1200px;
-}
-         
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+  * {
+    max-width: 1200px;
+  }
+          
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-.polaroid:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  .polaroid:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 
-.current {
-  display: block;
-  float:right;
-  background-color: rgba(0,0,0,0.2);
-  margin: .5vw;
-}
+  .current {
+    display: block;
+    float:right;
+    background-color: rgba(0,0,0,0.2);
+    margin: .5vw;
+  }
 
-.currenttext {
-  display: inline-block;
-  font-size: 1.5rem;
-  margin: 2.2vw 1vw 0 0;
-}
+  .currenttext {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 2.2vw 1vw 0 0;
+  }
 
-img.currentpic {
-  float:left;
-  margin: 1vw;
-  max-width: 150px;
-}
-/*this code is for the 5-day forcast */
+  img.currentpic {
+    float:left;
+    margin: 1vw;
+    max-width: 150px;
+  }
+  /*this code is for the 5-day forcast */
 
-.fiveday {
-  display: block;
-  /*margin: 10px;*/
-  width: 50vw;
-  /*text-align: center;*/
-  color: #004400;
-}
-table {
-  margin: 2vw auto;
-}
+  .fiveday {
+    display: block;
+    /*margin: 10px;*/
+    width: 50vw;
+    /*text-align: center;*/
+    color: #004400;
+  }
+  table {
+    margin: 2vw auto;
+  }
 
-table, th, td {
-  border: 1px solid #004400;
-  border-collapse: collapse;
-  text-align: center;
-  color: #004400;
-}
+  table, th, td {
+    border: 1px solid #004400;
+    border-collapse: collapse;
+    text-align: center;
+    color: #004400;
+  }
 
-th, td {
-  width: 10vw;
-}
+  th, td {
+    width: 10vw;
+  }
 
-.forecast {
-  display: block;
-  max-height: 100px;
-  width: 350px;
-}
+  .forecast {
+    display: block;
+    max-height: 100px;
+    width: 350px;
+  }
 
-.articleimg {
-  float: right;
-  width: 50%;
-  /*padding: 2vw;*/
-}
+  .articleimg {
+    float: right;
+    width: 50%;
+    /*padding: 2vw;*/
+  }
+
+  /*Home Page Styling*/
+  .towndata {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    box-sizing: border-box;
+    /*align-content: center;*/
+  }
+ 
+  .towndata img {
+    width: 100%;
+  }
+
+  .towndata div {
+    max-width: 400px;
+    height:  100%;
+    color: #407F7F;
+  }
+
+  .spotlight {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 3em;
+    background-color: rgba(0, 0, 0, 0.19);
+  }
+  .spotlight picture, .spotlight div {
+    width: 50%;
+  }
+  .spotlight div {
+    margin: 4em;
+    box-sizing: border-box;
+    padding: 2em 3em;
+  }
+
+  .spotlight img {
+    width: 100%;
+  }
 
 }

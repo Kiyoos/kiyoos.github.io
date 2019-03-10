@@ -84,12 +84,13 @@ nav ul li a:hover {
     background-color: rgba(0,0,0,0.4);
     color: #fff3e8;
 }
-
+/*End of Nav Styling*/
 
 .weather {
     position: relative;
     top: 10px;
     width:100%;
+    padding-bottom: 1em;
 }
 
 .weathersummary {
@@ -119,7 +120,7 @@ h2 {
     margin: 1em;
 }
 article {
-    width: 80%;
+    margin: 1vw;
     padding: 2vw;
 }
 .articletext {
@@ -128,6 +129,39 @@ article {
 .articleimg {
     width: 100%;
 }
+
+.spotlight {
+    margin: 2em;
+    display: block;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.19);
+}
+.spotlight h2, .spotlight p, .spotlight picture {
+    padding: 5px;
+    width: 80%;
+}
+.spotlight h2 a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #407F7F ;
+}
+
+.spotlight picture {
+    padding: 1em;
+    display: block;
+    align-content: center;
+}
+
+.spotlight img {
+    width: 100%;
+}
+.spotlight div {
+    margin: 1em;
+    box-sizing: border-box;
+    padding: 1em 2em .5em 2em;
+  }
+
+/*Footer Styling*/
 
 .map-address {
     display: flex;
@@ -259,6 +293,21 @@ label, .dangerlevel, .dangerlevel p {
     font-size: 1.1em;
 }
 
+fieldset {
+    margin: 1em;
+}
+
+legend {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#submit {
+    width: 50%;
+    text-align: center;
+}
+
+
 #thankyou{
     display: block;
     margin-left: auto;
@@ -268,6 +317,56 @@ label, .dangerlevel, .dangerlevel p {
     padding: 15px;
 
     }
+
+/* Styling Town Info on Home Page*/
+
+.towndata article {
+    box-sizing: content-box;
+    margin: .5em auto;
+    padding: 10px;
+    border: 1px  solid lightgrey;
+    text-align: center;
+    align-content: center;
+    color: #407F7F;
+    max-width: 425px;
+}
+
+.townContainer {
+    box-shadow: 5px 5px 40px rgba(0,0,0,.5);
+    background-color: white;
+    width: 100%;
+}
+
+.towndata img {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+  }
+
+.towndata article h2, .towndata article h3 {
+    color: #407F7F;
+}
+
+
+.towndata article h3 {
+    font-size: 1.1em;
+    font-style: italic;
+    padding: 2px;
+}
+
+.townInfo {
+    margin-left: 30px;
+    font-family: 'PT Serif', Georgia, serif;
+    font-size: 1em;
+    text-align: left;
+    padding: .25em 2em;
+    color: rgb(36, 37, 63);
+    letter-spacing: 1px;
+}
+
+.stormlink a div p {
+    text-decoration: none;
+}
 
 /*---Clearfix: Force an Elemennt not to collapse ---*/
 .clearfix:after {
