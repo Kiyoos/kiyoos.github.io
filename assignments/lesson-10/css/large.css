@@ -1,6 +1,3 @@
-.fiveday, .current  {
-  display: none;
-}
 
 /* Large devices*/
 @media only screen and (min-width: 64em) {
@@ -18,52 +15,36 @@
   }
 
   .current {
-    display: block;
-    float:right;
-    background-color: rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /*display: block;*/
+    /*float:right;*/
+    /*background-color: rgba(0,0,0,0.2);*/
     margin: .5vw;
+    width: 200px;
+    height: 75px;
+    background-color: rgba(0,0,0,0.2);
+    border:  10px solid rgba(0,0,0,0.2);
   }
 
   .currenttext {
-    display: inline-block;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-top: .4em;
     font-size: 1.5rem;
-    margin: 2.2vw 1vw 0 0;
   }
 
   img.currentpic {
-    float:left;
-    margin: 1vw;
-    max-width: 150px;
-  }
-  /*this code is for the 5-day forcast */
-
-  .fiveday {
-    display: block;
-    /*margin: 10px;*/
-    width: 50vw;
-    /*text-align: center;*/
-    color: #004400;
-  }
-  table {
-    margin: 2vw auto;
+    grid-column-start: 1;
   }
 
-  table, th, td {
-    border: 1px solid #004400;
-    border-collapse: collapse;
-    text-align: center;
-    color: #004400;
+  .curTemp {
+    grid-column-start: 1;
   }
 
-  th, td {
-    width: 10vw;
-  }
-
-  .forecast {
-    display: block;
-    max-height: 100px;
-    width: 350px;
-  }
+ 
 
   .articleimg {
     float: right;

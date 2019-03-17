@@ -26,12 +26,12 @@ function showTownInfo(jsonObj){
 
             myH2.textContent=townName[i].name;
             myH3.textContent=townName[i].motto;
-            myPara1.textContent= 'Year Founded: ' +townName[i].yearFounded;
+            myPara1.textContent='Year Founded: ' + townName[i].yearFounded;
             myPara2.textContent='Population: ' +townName[i].currentPopulation;
             myPara3.textContent='Annual Rain Fall: ' +townName[i].averageRainfall+ '"';
 
             myContainer.setAttribute("class", "townContainer");
-            myTownInfo.setAttribute("class", "townInfo");     
+            myTownInfo.setAttribute("class", "townInfo");    
             if (correctName == "Preston") {
                 myImg.setAttribute("src", "images/town-preston400.jpg");
                 myImg.setAttribute("alt", "Preston Town Picture")
@@ -57,11 +57,3 @@ function showTownInfo(jsonObj){
         continue;
     }
 }
-/*
-var myTownImg = ["town-fishhaven400", "town-preston400", "town-sodasprings400"];
-var myImgAlt = ["Fish Haven Town Picture", "Preston Town Picture","Soda Springs Town Picture"];
-function(){
-    for (var j = 0; j < myTownImg.length; j++){
-        myImg.setAttribute("src", "images/" + myTownImg[j] + ".jpg");
-        myImg.setAttribute("alt", ""+myImgAlt[j]+"");
-    }*/

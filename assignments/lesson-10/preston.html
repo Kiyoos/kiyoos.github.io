@@ -19,7 +19,8 @@
                 <div class="motto">We make weather fun.</div>
             </div>
             <div class="current">
-                <img class="currentpic clearfix" src="images/currentweather_resized.jpg" alt='current weather'>            
+                <img class="currentpic" id="cur-img" src="" alt="">  
+                <p class="curTemp"><span id="cur-temp"></span>&deg; F</p>          
                 <p class="currenttext">Current Weather</p>
             </div>
         </header>
@@ -43,40 +44,18 @@
                 </picture>
                 <section class="weathersummary">
                     <h4>Weather Summary</h4>
-                    <p>Currently: Snowing</p>
-                    <p>Temp: <span id="temp">29</span>&deg; F</p>
-                    <p>Humidity: 78%</p>
-                    <p>Precipitation: 70%</p>
-                    <p>Wind Speed: <span id="windspeed">5</span> mph</p>
-                    <p>Wind Chill: <span id="windchill"></span></p>
+                    <p>Currently: <span id="condition"></span></p>
+                    <p>Temperature: <span id="temp"></span>&deg; F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                    <p>Wind Chill: <span id="windchill"></span>&deg; F</p>
                 </section>
             </div>  
             <table class="fiveday">
-                <tr>
-                    <th colspan="5">Five Day Forecast</th>
-                </tr>
-                <tr>
-                    <th>Monday</th> 
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                </tr>
-                <tr>
-                    <td>Partly Cloudy</td>
-                    <td>Cloudy</td>
-                    <td>Partly Cloudy</td>
-                    <td>Sunny</td>
-                    <td>Partly Cloudy</td>
-                </tr>
-                <tr>
-                    <td>32&deg; F</td>
-                    <td>30&deg; F</td>
-                    <td>33&deg; F</td>
-                    <td>34&deg; F</td>
-                    <td>31&deg; F</td>
-                </tr>
             </table>
+            <section class='townevents'>
+
+            </section>
             <article class="clearfix">
                 <div class="title-author">
                     <h3>An Awesome Weather Story</h3>
@@ -104,12 +83,14 @@
                     Phone: 208-555-1234<br>
                     Email: <a href="mailto:mail@weatheritsfun.com">mail@weatheritsfun.com</a> 
                 </address>
-                <img class="map" src="images/idahomap_600_minimum.jpg" alt="Map of Preston">
+                <img class="map" src="images/idahomap_600_minimum.jpg" alt="Map of Idaho">
             </div>
-            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders | Weather it's Fun</p>
+            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders | Weather it's Fun | Weather Information Curtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/windchill.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/forecast.js"></script>
+        <script src="scripts/townevents.js"></script>
     </body>
 </html>
