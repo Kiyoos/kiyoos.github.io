@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Gallery for Weather it's Fun">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">  
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo_resized_100.png" alt="Weather it's Fun Logo">
+            <div>
+                <h1>Weather it's Fun</h1>
+                <div class="motto">We make weather fun.</div>
+            </div>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="hamburgermenu" class="hide">
+                <li><a href="../weathersite/index.html">Home</a></li>
+                <li><a href="../weathersite/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../weathersite/stormcenter.html">Storm Center</a></li>
+                <li><a href="../weathersite/gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <div class="polaroid">
+                    <picture>
+                        <source srcset="images/weather-snow400.jpg" media="(max-width: 64em)">                    
+                        <img src="images/weather-snow800.jpg" alt="Snowy Landscape">
+                    </picture>
+                    <div class="imagecaption">
+                        <p>Snowy Landscape</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <picture>
+                        <source srcset="images/weather-lightning400.jpg" media="(max-width: 64em)">                    
+                        <img src="images/weather-lightning800.jpg" alt="Lightning Storm">
+                    </picture>
+                    <div class="imagecaption">
+                        <p>Lightning Storm</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <picture>
+                        <source srcset="images/weather-rain400.jpg" media="(max-width: 64em)">                    
+                        <img src="images/weather-rain800.jpg" alt="Rain in the Country">
+                    </picture>
+                    <div class="imagecaption">
+                        <p>Rain in the Country</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <picture>
+                        <source srcset="images/weather-sunny400.jpg" media="(max-width: 64em)">                    
+                        <img src="images/weather-sunny800.jpg" alt="Wildflowers in the Mountains">
+                    </picture>
+                    <div class="imagecaption">
+                        <p>Wildflowers in the Mountains</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <picture>
+                        <source srcset="images/weather-colorfulsunset400.jpg" media="(max-width: 64em)">                    
+                        <img src="images/weather-colorfulsunset800.jpg" alt="Colorful Sunset">
+                    </picture>
+                    <div class="imagecaption">
+                        <p>Colorful Sunset</p>
+                    </div>
+                </div>
+            <div class="polaroid">
+                <picture>
+                    <source srcset="images/weather-partlycloudy400.jpg" media="(max-width: 64em)">                    
+                    <img src="images/weather-partlycloudy800.jpg" alt="Mountains Reflecting in a Small Lake">
+                </picture>
+                <div class="imagecaption">
+                    <p>Mountains Reflecting in a Small Lake</p>
+                </div>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <div class="map-address">
+                <address>
+                    Weather it's Fun<br>
+                    123 Some Street<br>
+                    Preston, Idaho 83263<br>
+                    <br>
+                    Phone: 208-555-1234<br>
+                    Email: <a href="mailto:mail@weatheritsfun.com">mail@weatheritsfun.com</a> 
+                </address>
+                <img class="map" src="images/idahomap_600_minimum.jpg" alt="Map of Idaho">
+            </div>
+            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders | Weather it's Fun</p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>

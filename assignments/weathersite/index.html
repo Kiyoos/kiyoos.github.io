@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather it's Fun Home Page">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">  
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo_resized_100.png" alt="Weather it's Fun Logo">
+            <div>
+                <h1>Weather it's Fun</h1>
+                <div class="motto">We make weather fun.</div>
+            </div>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="hamburgermenu" class="hide">
+                <li><a href="../weathersite/index.html"  class="active">Home</a></li>
+                <li><a href="../weathersite/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../weathersite/stormcenter.html">Storm Center</a></li>
+                <li><a href="../weathersite/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Bringing the weather to you.</h2>
+            <div class="weather">
+                <picture>
+                    <source srcset="images/mountains800.jpg" media="(max-width: 750px)">                    
+                    <img class="townpic" src="images/mountains1200.jpg" alt="Fog in the Mountains">
+                </picture>
+            </div>
+            <section class="towndata">
+            </section>
+            <div class="spotlight">
+                <div>
+                    <h2><a href="../weathersite/stormcenter.html">Storm Center</a></h2>
+                    <p>Have you noticed any storms in the area? You may report them on our Storm Center page.</p>
+                </div>
+                <picture>
+                    <source srcset="images/weather-lightning400.jpg" media="(max-width: 64em)">
+                    <img src="images/weather-lightning800.jpg" alt="Lightning Storm">
+                </picture>
+            </div>
+        </main>
+        <footer>
+            <div class="map-address">
+                <address>
+                    Weather it's Fun<br>
+                    123 Some Street<br>
+                    Preston, Idaho 83263<br>
+                    <br>
+                    Phone: 208-555-1234<br>
+                    Email: <a href="mailto:mail@weatheritsfun.com">mail@weatheritsfun.com</a> 
+                </address>
+                <img class="map" src="images/idahomap_600_minimum.jpg" alt="Map of Idaho">
+            </div>
+            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders | Weather it's Fun</p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/towninfo.js"></script>
+    </body>
+</html>

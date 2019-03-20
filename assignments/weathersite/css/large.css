@@ -1,0 +1,93 @@
+
+/* Large devices*/
+@media only screen and (min-width: 64em) {
+  * {
+    max-width: 1200px;
+  }
+          
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .polaroid:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .current {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /*display: block;*/
+    /*float:right;*/
+    /*background-color: rgba(0,0,0,0.2);*/
+    margin: .5vw;
+    width: 200px;
+    height: 75px;
+    background-color: rgba(0,0,0,0.2);
+    border:  10px solid rgba(0,0,0,0.2);
+  }
+
+  .currenttext {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-top: .4em;
+    font-size: 1.5rem;
+  }
+
+  img.currentpic {
+    grid-column-start: 1;
+  }
+
+  .curTemp {
+    grid-column-start: 1;
+  }
+
+ 
+
+  .articleimg {
+    float: right;
+    width: 50%;
+    /*padding: 2vw;*/
+  }
+
+  /*Home Page Styling*/
+  .towndata {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    box-sizing: border-box;
+    /*align-content: center;*/
+  }
+ 
+  .towndata img {
+    width: 100%;
+  }
+
+  .towndata div {
+    max-width: 400px;
+    height:  100%;
+    color: #407F7F;
+  }
+
+  .spotlight {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 3em;
+    background-color: rgba(0, 0, 0, 0.19);
+  }
+  .spotlight picture, .spotlight div {
+    width: 50%;
+  }
+  .spotlight div {
+    margin: 4em;
+    box-sizing: border-box;
+    padding: 2em 3em;
+  }
+
+  .spotlight img {
+    width: 100%;
+  }
+
+}

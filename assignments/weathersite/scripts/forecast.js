@@ -9,13 +9,13 @@ forecastRequest.onload = function(){
     var table = document.querySelector('table');
     var trhead = document.createElement('tr');
     var trday = document.createElement('tr');
-    trday.setAttribute("class", "days");
-    var trtemp = document.createElement('tr');
     var trimg = document.createElement('tr');
+    var trtemp = document.createElement('tr');
     var thead = document.createElement('th');
     thead.textContent = "Fiveday Forecast";
     thead.setAttribute("colspan", 5);
-
+    trday.setAttribute("class", "days");
+    
     var now = new Date();
     var today = now.getDay();
     var day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun","Mon","Tue","Wed","Thu"];
@@ -31,20 +31,20 @@ forecastRequest.onload = function(){
         var y = x.includes('18:00:00');
         if (y == true) {
 
-            var tdtemp = document.createElement('td');
             var tdimg = document.createElement('td');
             var tempimg = document.createElement('img');
+            var tdtemp = document.createElement('td');
 
-            tdtemp.textContent = forecastData.list[i].main.temp +" F";
-            /*document.getElementById("testtemp").innerHTML = forecastData.list[i].main.temp;*/
             let icon = "https://openweathermap.org/img/w/"+ forecastData.list[i].weather[0].icon +".png";
             let altText = forecastData.list[i].weather[0].description;
             tempimg.setAttribute('src',icon);
             tempimg.setAttribute('alt',altText);
-
-            trtemp.appendChild(tdtemp);
+            tdtemp.textContent = forecastData.list[i].main.temp +" F";
+            
+            tdimg.appendChild(tempimg); 
             trimg.appendChild(tdimg);
-            tdimg.appendChild(tempimg);         
+            trtemp.appendChild(tdtemp);
+                    
         }
         continue;
     }
@@ -53,7 +53,7 @@ forecastRequest.onload = function(){
     table.appendChild(trhead);
     table.appendChild(trday); 
     table.appendChild(trtemp);
-    table.appendChild(trimg)
+    table.appendChild(trimg);
 }
 
 

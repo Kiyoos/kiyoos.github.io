@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Storm Center</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Storm Center for Weather it's Fun">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">  
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo_resized_100.png" alt="Weather it's Fun Logo">
+            <div>
+                <h1>Weather it's Fun</h1>
+                <div class="motto">We make weather fun.</div>
+            </div>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="hamburgermenu" class="hide">
+                <li><a href="../weathersite/index.html">Home</a></li>
+                <li><a href="../weathersite/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../weathersite/stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="../weathersite/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Weather it's Fun Storm Center</h2>
+            <p>Please let us know about storm activity in your area by giving information below.</p>
+            <div class="container">
+                <form id="stormreport" action="../weathersite/thanks.html">
+                    <p>Fields marked with <span class="required">*</span> are required.</p>
+                    <fieldset id="contactinfo">
+                        <legend>Contact Information</legend>
+                        <div class="row">
+                            <div class="columnleft">
+                                <label for="name">Full Name<span class="required">*</span>: </label>
+                            </div>
+                            <div class="columnright">
+                                <input class="contactinput" type="text" name="name" pattern="[A-za-z].{5,}" id="name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="columnleft">
+                                <label for="email">Email: </label>
+                            </div>
+                            <div class="columnright">
+                                <input type="email" name="email" id="email" placeholder="example@email.com">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="columnleft">
+                                <label for="telephone">Telephone<span class="required">*</span>: </label>
+                            </div>
+                            <div class="columnright">
+                                <input type="tel" name="telephone" id="telephone" required>
+                            </div>
+                        </div>
+                        <div class="row">    
+                            <div class="columnleft">
+                                <label for="zipcode">Zip Code<span class="required">*</span>: </label>
+                            </div>
+                            <div class="columnright">
+                                <input type="number" name="zipcode" id="zipcode" required>
+                            </div>  
+                        </div>
+                    </fieldset>
+                    <fieldset id="storminformation">
+                        <legend>Storm Information</legend>
+                        <div class="row">
+                            <div class="columnleft">
+                                <label>Date: </label>
+                            </div>
+                            <div class="columnright">
+                                <input type="date" name="date" id="date">
+                            </div>
+                        </div>
+                        <div class="storminfo">
+                            <div class="columnleft">
+                                <label for="stormtype">Storm Type: </label>
+                            </div>
+                            <div class="columnright">
+                                <input list="storm-type" name="stormtype" id="stormtype">
+                                <datalist id="storm-type">
+                                    <option value="Flash Flood">
+                                    <option value="Hail">
+                                    <option value="Hurricane">
+                                    <option value="Thunderstorm"> 
+                                    <option value="Tornado">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="storminfo">
+                            <div class="columnleft">
+                                <label for="stormseverity">Storm Severity on a scale of 1 to 10: </label>
+                                <p id="severity"></p>
+                            </div>
+                            <div class="columnright">
+                                <input type="range" name="stormseverity" id="stormseverity" min="1" max="10" onchange="adjustSeverity(this.value)">
+                            </div>
+                        </div>
+                        <div class="storminfo">
+                            <div class="columnleft">
+                                <label for="stormregion">Storm Region:</label> 
+                            </div>
+                            <div class="columnright">
+                                <select name="stormregion" id="stormregion">
+                                    <option disabled="disabled" selected>Select Region...</option>
+                                    <option value="Preston">Preston</option>
+                                    <option value="Soda Springs">Soda Springs</option>
+                                    <option value="Fish Haven">Fish Haven</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="stormlevel">
+                            <div class="dangerlevel">
+                                    <p>Danger Level:</p> 
+                                    <input type="radio" name="dangerlevel" id="yes" value="yes">
+                                    <label for="yes">Yes</label>
+                                    <input type="radio" name="dangerlevel" id="no" value="no">
+                                    <label for="no">No</label>
+                                    <input type="radio" name="dangerlevel" id="maybe" value="maybe">
+                                    <label for="maybe">Maybe</label>
+                            </div>
+                        </div>
+                        <div class="storminfo">
+                            <label for="additionalinfo">Additional Information:</label> 
+                            <textarea name="additionalinfo" id="additionalinfo" rows="4" cols="40"></textarea>
+                        </div>
+                    </fieldset>
+                    <div id="submit">
+                        <input type="submit" name="submit">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="map-address">
+                <address>
+                    Weather it's Fun<br>
+                    123 Some Street<br>
+                    Preston, Idaho 83263<br>
+                    <br>
+                    Phone: 208-555-1234<br>
+                    Email: <a href="mailto:mail@weatheritsfun.com">mail@weatheritsfun.com</a> 
+                </address>
+                <img class="map" src="images/idahomap_600_minimum.jpg" alt="Map of Idaho">
+            </div>
+            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders | Weather it's Fun</p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/value.js"></script>
+    </body>
+</html>

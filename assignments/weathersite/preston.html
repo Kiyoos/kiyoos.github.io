@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Preston</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Preston Town Weather Page">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">  
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo_resized_100.png" alt="Weather it's Fun Logo">
+            <div>
+                <h1>Weather it's Fun</h1>
+                <div class="motto">We make weather fun.</div>
+            </div>
+            <div class="current" id='cur-pres'>
+                <img class="currentpic" id="cur-img" src="" alt="">  
+                <p class="curTemp"><span id="cur-temp"></span>&deg; F</p>          
+                <p class="currenttext">Current Weather</p>
+            </div>
+        </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="hamburgermenu" class="hide">
+                <li><a href="../weathersite/index.html">Home</a></li>
+                <li><a href="../weathersite/preston.html" class="active">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../weathersite/stormcenter.html">Storm Center</a></li>
+                <li><a href="../weathersite/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston, Idaho</h2>
+            <div class="weather">
+                <picture>
+                    <source srcset="images/town-preston800.jpg" media="(max-width: 64em)">                    
+                    <img class="townpic" src="images/town-preston1200.jpg" alt="Image of Preston">
+                </picture>
+                <section class="weathersummary">
+                    <h4>Weather Summary</h4>
+                    <p>Currently: <span id="condition"></span></p>
+                    <p>Temperature: <span id="temp"></span>&deg; F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                    <p>Wind Chill: <span id="windchill"></span>&deg; F</p>
+                </section>
+            </div>  
+            <table class="fiveday">
+            </table>
+            <section class='townevents' id='preston'>
+
+            </section>
+            <article class="clearfix">
+                <div class="title-author">
+                    <h3>An Awesome Weather Story</h3>
+                    <p>by Iluv Snow</p>
+                </div>
+                <picture>
+                    <source srcset="images/funinsnow_600.jpg" media="(min-width: 64em)">
+                    <img class="articleimg" src="images/funinsnow_800.jpg" alt="family playing in snow">
+                </picture>
+                <div class="articletext">
+                    <p>A really cool story about how there is snow. This means everyone can go and play. They can have a snowball fight and then come inside and make hot chololate.</p>
+                    <p>Then you can go and do other fun things in the snow. Snow is pretty. It makes everything sparkle and white.</p>
+                    <p>Lorem ipsum dolor sit amet, enim velit urbanitas sit no. Ex usu propriae lucilius. Probo mazim cotidieque at nam, pro ut vidit facer pertinax, enim reque ex pro. Magna falli nam at, his eu posse laoreet maiestatis. In eos senserit reprehendunt, te causae persequeris nam, ea eam dolor noster fierent.</p>
+                    <p>Ut nisl tantas liberavisse eos. Option explicari dissentiet vim ei. Vim natum numquam oporteat ei. Ad ceteros disputando est, ne dicta facilisis urbanitas est. Ei vel nulla eirmod, an eos movet periculis, ea facete dolores his. Sit ea dolores eleifend philosophia, eam alii illud dignissim id.</p>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div class="map-address">
+                <address>
+                    Weather it's Fun<br>
+                    123 Some Street<br>
+                    Preston, Idaho 83263<br>
+                    <br>
+                    Phone: 208-555-1234<br>
+                    Email: <a href="mailto:mail@weatheritsfun.com">mail@weatheritsfun.com</a> 
+                </address>
+                <img class="map" src="images/idahomap_600_minimum.jpg" alt="Map of Idaho">
+            </div>
+            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders | Weather it's Fun | Weather Information Curtesy of <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/forecast.js"></script>
+        <script src="scripts/townevents.js"></script>
+    </body>
+</html>
