@@ -11,11 +11,6 @@ var townEvents = request.response;
 }
 
 function showTownEvents(jsonObj){
-    /*var towns = new Array['Preston','Soda Springs','Fish Haven'];
-    for (var n = 0; n < townName.length; n++){
-        var sectionte=document.querySelector('section.townevents#[n]');
-    }*/
-
     
     var myContainer = document.createElement('div');
     myContainer.setAttribute('class', 'mycontainer');

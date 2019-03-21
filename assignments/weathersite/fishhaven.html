@@ -2,9 +2,9 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Preston</title>
+        <title>Fish Haven</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Preston Weather and Town Event">
+        <meta name="description" content="Fish Haven Weather and Town Event">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">  
@@ -28,19 +28,19 @@
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="hamburgermenu" class="hide">
                 <li><a href="../weathersite/index.html">Home</a></li>
-                <li><a href="../weathersite/preston.html" class="active">Preston</a></li>
+                <li><a href="../weathersite/preston.html">Preston</a></li>
                 <li><a href="../weathersite/sodasprings.html">Soda Springs</a></li>
-                <li><a href="../weathersite/fishhaven.html">Fish Haven</a></li>
+                <li><a href="../weathersite/fishhaven.html" class="active">Fish Haven</a></li>
                 <li><a href="../weathersite/stormcenter.html">Storm Center</a></li>
                 <li><a href="../weathersite/gallery.html">Gallery</a></li>
             </ul>
         </nav>
         <main>
-            <h2>Preston, Idaho</h2>
+            <h2>Fish Haven, Idaho</h2>
             <div class="weather">
                 <picture>
-                    <source srcset="images/town-preston800.jpg" media="(max-width: 64em)">                    
-                    <img class="townpic" src="images/town-preston1200.jpg" alt="Image of Preston">
+                    <source srcset="images/town-fishhaven800.jpg" media="(max-width: 64em)">                    
+                    <img class="townpic" src="images/town-fishhaven1200.jpg" alt="Image of Fish Haven">
                 </picture>
                 <section class="weathersummary">
                     <h4>Weather Summary</h4>
@@ -53,7 +53,7 @@
             </div>  
             <table class="fiveday">
             </table>
-            <section class='townevents' id='preston'>
+            <section class='townevents' id=fishhaven>
 
             </section>
             <article class="clearfix">
@@ -89,8 +89,8 @@
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/weatherp.js"></script>
-        <script src="scripts/forecastp.js"></script>
-        <script src="scripts/towneventsp.js"></script>
+        <script src="scripts/weatherf.js"></script>
+        <script src="scripts/forecastf.js"></script>
+        <script src="scripts/towneventsf.js"></script>
     </body>
 </html>
