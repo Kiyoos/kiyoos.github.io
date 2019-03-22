@@ -12,7 +12,7 @@ forecastRequest.onload = function(){
     var trimg = document.createElement('tr');
     var trtemp = document.createElement('tr');
     var thead = document.createElement('th');
-    thead.textContent = "Fiveday Forecast";
+    thead.textContent = "Five Day Forecast";
     thead.setAttribute("colspan", 5);
     trday.setAttribute("class", "days");
     
