@@ -25,13 +25,14 @@ header {
 header>div {
     display: inline-flex;
 }
+
 .logo {
     margin-top: .25em;
     max-width: 90px;
 }
 
 h1 {
-    padding: 1em 1em 0 1em;
+    padding: 1em 2em 0 2em;
     order: 1;
 }
 
@@ -151,14 +152,16 @@ h2 {
 .title-author {
     margin: 1em;
 }
-article {
-    margin: 1vw;
+.story {
+    margin: 1vw auto;
+    padding: 2em;
+    max-width: 550px;
+}
+.storytext {
     padding: 2vw;
 }
-.articletext {
-    padding: 2vw;
-}
-.articleimg {
+.storyimg>img {
+    box-sizing: border-box;
     width: 100%;
 }
 
@@ -369,7 +372,7 @@ legend {
     max-width: 425px;
 }
 
-.townContainer {
+div.townContainer {
     box-shadow: 5px 5px 40px rgba(0,0,0,.5);
     background-color: white;
     width: 100%;

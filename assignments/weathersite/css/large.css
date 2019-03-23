@@ -6,7 +6,7 @@
   }
           
   .gallery {
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -43,21 +43,20 @@
   .curTemp {
     grid-column-start: 1;
   }
-
- 
-
+/*
   .articleimg {
     float: right;
     width: 50%;
-    /*padding: 2vw;*/
+    padding: 2vw;
   }
-
+*/
   /*Home Page Styling*/
   .towndata {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     box-sizing: border-box;
+    width: 100%;
     /*align-content: center;*/
   }
  
@@ -89,5 +88,20 @@
   .spotlight img {
     width: 100%;
   }
+  .story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1vw auto;
+    padding: 2em;
+    max-width: 1200px;
+  }
 
+  .storyimg {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    float: right;
+    width: 100%;
+    /*padding: 2vw;*/
+  }
 }
