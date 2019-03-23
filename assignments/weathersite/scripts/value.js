@@ -1,3 +1,1 @@
-function adjustSeverity(rating) {
-    document.getElementById("severity").innerHTML = rating;
-}
+function adjustSeverity(a){document.getElementById("severity").innerHTML=a};

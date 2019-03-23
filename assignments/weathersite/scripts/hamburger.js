@@ -1,3 +1,1 @@
-function toggleMenu() {
-    document.getElementById("hamburgermenu").classList.toggle("hide");
-}
+function toggleMenu(){document.getElementById("hamburgermenu").classList.toggle("hide")};
