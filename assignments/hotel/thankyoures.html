@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang=en-us>
+    <head>
+        <meta charset="utf-8">
+        <title>Temple Inn & Suites | Catering to Temple Patrons and Workers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Temple Inn & Suites, we are your home away from home. We caters towards temple patrons, workers, and their families">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">  
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web|Merienda" >
+    </head>
+    <body>
+        <header>
+            <img src="images/templelogo.png" alt="Temple Silhouette Logo" >
+            <h1>Temple Inn & Suites</h1>
+        </header>
+        <nav class=clearfix>
+            <button onclick=toggleMenu()>&#9776;</button>
+            <ul class=hide id=hamburgermenu>
+                <li><a href="../hotel/index.html">Home</a>
+                <li><a href="../hotel/temples.html">Temples</a>
+                <li><a href="../hotel/reservations.html" class="active">Reservations</a>
+                <li><a href="../hotel/services.html">Services</a>
+                <li><a href="../hotel/contactus.html">Contact Us</a>
+            </ul>
+        </nav>
+        <main>
+            <h2>Thank you!</h2>
+            <img src="images/thankyou.jpg" alt="Thank you" class="tyimg">
+            <p>Thank you for your reservation. You may check-in anytime after 2pm on your check-in day. If you get here early, you are welcome to use the changing rooms. Just check in at the front desk.</p>
+            <div id="phone">
+                <h4>Contact us if you have any questions or concerns 1-888-555-3456</h4>
+                <img src="images/phone.jpg" alt="Old Fashioned Phone" class="tyimg">
+            </div>
+        </main>
+        <footer>
+            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders CIT 230 | <a href="../hotel/index.html">Temple Inn & Suites</a> | <a href="../hotel/contactus.html">Contact Us</a> | <a href="../hotel/attribution.html">Attribution</a></p>      
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>

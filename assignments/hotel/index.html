@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang=en-us>
+    <head>
+        <meta charset="utf-8">
+        <title>Temple Inn & Suites | Catering to Temple Patrons and Workers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Temple Inn & Suites, we are your home away from home. We caters towards temple patrons, workers, and their families">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">  
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web|Merienda" >
+    </head>
+    <body>
+        <header>
+            <img src="images/templelogo.png" alt="Temple Silhouette Logo" >
+            <h1>Temple Inn & Suites</h1>
+        </header>
+        <nav class=clearfix>
+            <button onclick=toggleMenu()>&#9776;</button>
+            <ul class=hide id=hamburgermenu>
+                <li><a href="../hotel/index.html" class="active">Home</a>
+                <li><a href="../hotel/temples.html">Temples</a>
+                <li><a href="../hotel/reservations.html">Reservations</a>
+                <li><a href="../hotel/services.html">Services</a>
+                <li><a href="../hotel/contactus.html">Contact Us</a>
+            </ul>
+        </nav>
+        <main>
+            <p>Your home away from home while attending the temple.</p>
+            <div class="large">
+                <div class="border">
+                    <h2>Spokane Temple</h2>
+                    <p>Come visit the Spokane Temple.<br>
+                        It may be small, but it is beautiful.</p>
+                    <picture>
+                        <source srcset="images/spokanetempleday500.jpg" media="(max-width: 750px)">                    
+                        <img src="images/spokanetempleday-800.jpg" alt="Spokane Temple for the Church of Jesus Christ of Latter-day Saints">
+                    </picture>
+                    <div class="col2">
+                        <div>
+                            <p>13710 E 40th Ave</p>
+                            <p>Spokane, WA 99206</p>
+                        </div>
+                        <div>
+                            <p>Schedule a Session</p>
+                            <p>509-926-2824</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border">
+                    <h2>Temple Inn & Suites - Spokane</h2>
+                    <p>Our Spokane location is located<br>
+                        conveniently next to the temple.</p>
+                    <picture>
+                        <source srcset="images/hotelroom2-500.jpg" media="(max-width: 750px)">                    
+                        <img src="images/hotelroom2-800.jpg" alt="Deluxe Hotel Room in Spokane, WA">
+                    </picture>
+                    <div class="col2">
+                        <div>
+                            <p>13820 E 40th Ave</p>
+                            <p>Spokane, WA 99206</p>
+                        </div>
+                        <div>
+                            <p>Call for Reservations</p>
+                            <p>509-555-1234</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="small">
+                <div class="border smallspotlight">
+                    <picture>
+                        <source srcset="images/reception1-300.jpg" media="(max-width: 750px)">                    
+                        <img class="townpic" src="images/reception1-500.jpg" alt="Receiption with Candlesticks">
+                    </picture>
+                    <h3>Reception Hall</h3>
+                    <p>Our reception hall is good for wedding receptions, firesides, plus other family events.</p>
+                </div>
+                <div class="border smallspotlight">
+                    <picture>
+                        <source srcset="images/changingroom2-300.jpg" media="(max-width: 750px)">                    
+                        <img class="townpic" src="images/changingroom2-500.jpg" alt="Private Changing Room with Table">
+                    </picture>
+                    <h3>Changing Facilities</h3>
+                    <p>Our changing facilities are a nice convenient place for you to change from your travel clothes into your temple, or event clothes.</p>
+                    <p>Travel in comfort, arrive at the temple in your Sunday best.</p>
+                </div>
+                <div class="border smallspotlight">
+                    <picture>
+                        <source srcset="images/familyhistorybook-300.jpg" media="(max-width: 750px)">                    
+                        <img class="townpic" src="images/familyhistorybook-500.jpg" alt="Family History Photo Album Sketch">
+                    </picture>
+                    <h3>Family History Center</h3>
+                    <p>We have a full service family history center. Complete with people to help with any questions you may have to help you find your family on the other side of the veil.</p>
+                </div>
+                <div class="border smallspotlight">
+                    <picture>
+                        <source srcset="images/motherandchild-300.jpg" media="(max-width: 750px)">                    
+                        <img src="images/motherandchild-500.jpg" alt="Mother with Child">
+                    </picture>
+                    <h3>Short Term Childcare</h3>
+                    <p>We understand that it isn't always possible, or convenient, to find a safe place for your children while you are in the temple.<br>
+                        You can feel safe bringing them here.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders CIT 230 | <a href="../hotel/index.html">Temple Inn & Suites</a> | <a href="../hotel/contactus.html">Contact Us</a> | <a href="../hotel/attribution.html">Attribution</a></p>      
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>

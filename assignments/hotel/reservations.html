@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang=en-us>
+   <head>
+      <meta charset="utf-8">
+      <title>Reservations for Temple Inn & Suites</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Reservation page for the Temple Inn & Suites. A hotel chain with locaitons conveniently located next to the Church of Jesus-Christ of Latter-day Saints Temples.">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">  
+      <link rel="stylesheet" href="css/large.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web|Merienda" >
+   </head>
+   <body>
+      <header>
+            <img src="images/templelogo.png" alt="Temple Silhouette Logo" >
+            <h1>Temple Inn & Suites</h1>
+      </header>
+      <nav class=clearfix>
+            <button onclick=toggleMenu()>&#9776;</button>
+            <ul class=hide id=hamburgermenu>
+                  <li><a href="../hotel/index.html">Home</a>
+                  <li><a href="../hotel/temples.html">Temples</a>
+                  <li><a href="../hotel/reservations.html" class=active>Reservations</a>
+                  <li><a href="../hotel/services.html">Services</a>
+                  <li><a href="../hotel/contactus.html">Contact Us</a>
+            </ul>
+      </nav>
+      <main>
+         <h2>Reservations</h2>
+         <p>Reserve your stay</p>
+         <form id="reservations" action="../hotel/thankyoures.html">
+            <div id="contactinfo">
+                  <div>
+                     <label for="name">Full Name<span class="required">*</span></label>
+                     <input name="name" id="name" required class="contactinput" pattern="[A-za-z].{5,}">
+                  </div>
+                  <div>
+                     <label for="telephone">Telephone<span class="required">*</span></label>
+                     <input name="telephone" id="telephone" type="tel" required>
+                  </div>
+                  <div>
+                     <label for="email">Email<span class="required">*</span></label>
+                     <input name="email" id="email" type="email" placeholder="example@email.com" required>
+                  </div>
+                  <div>
+                     <label for="state">State/Country</label>
+                     <input name="state" id="state" type="state"pattern="[A-za-z].{4,}">
+                  </div>
+            </div>
+            <div id="reservationinfo">
+               <div>
+                  <label for="checkin">Check-in:</label>
+                  <input name="checkin" type="date">
+               </div>
+               <div>
+                  <label for="checkout">Check-out:</label>
+                  <input name="checkout" type="date">
+               </div>
+               <div>
+                  <label for="temple">Inn Location:</label>
+                  <input name="temple" list="location">
+                     <datalist id="location">
+                        <option value="Bellvue, WA"></option>
+                        <option value="Idaho Falls, ID"></option>
+                        <option value="Kennewick, WA"></option>
+                        <option value="Spokane, WA"></option>
+                     </datalist>
+               </div>
+               <div id="numrooms">
+                  <label for="numrooms">Number of Rooms</label>
+                  <input name="numrooms" type="number">
+               </div>
+               <div>
+                  <label for="roomtype">Type of Room(s):</label>
+                  <select id="roomtype" name="roomtype">
+                     <option disabled selected>Select Room Type</option>
+                     <option value="Single">Single</option>
+                     <option value="Double">Double</option>
+                     <option value="Queen">Triple</option>
+                     <option value="King">Quad</option>
+                     <option value="Appartment">Appartment</option>
+                     <option value="Junior Suite">Junior Suite</option>
+                     <option value="Presitential Suite">Presidential Suite</option>
+                  </select>
+               </div>
+            </div>
+            <div id="accommodations">
+               <div>
+                  <label for="comments">Special Accommodations / Comments:</label> 
+                  <textarea id="comments" name="comments"></textarea>
+               </div>
+               <div id="submitres">
+                  <input id="submit" name=submit type=submit>
+               </div>
+            </div>
+         </form>
+      </main>
+      <footer>
+         <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders CIT 230 | <a href="../hotel/index.html">Temple Inn & Suites</a> | <a href="../hotel/contactus.html">Contact Us</a> | <a href="../hotel/attribution.html">Attribution</a></p>      
+      </footer>
+     <script src="scripts/hamburger.js"></script>
+     <script src="scripts/currentdate.js"></script>
+ </body>
+</html>

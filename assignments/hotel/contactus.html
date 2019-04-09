@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang=en-us>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us | Temple Inn & Suites</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contact Us page for the Temple Inn & Suites. Your home away from home while attending the temple.">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">  
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web|Merienda" >
+    </head>
+    <body>
+        <header>
+            <img src="images/templelogo.png" alt="Temple Silhouette Logo" >
+            <h1>Temple Inn & Suites</h1>
+        </header>
+        <nav class=clearfix>
+            <button onclick=toggleMenu()>&#9776;</button>
+            <ul class=hide id=hamburgermenu>
+                <li><a href="../hotel/index.html">Home</a>
+                <li><a href="../hotel/temples.html">Temples</a>
+                <li><a href="../hotel/reservations.html">Reservations</a>
+                <li><a href="../hotel/services.html">Services</a>
+                <li><a href="../hotel/contactus.html"  class=active>Contact Us</a>
+            </ul>
+        </nav>
+        <main>
+            <h2>Contact Us</h2>
+            <p>We will be glad to help in any way we can. For this reason we have made it easy for you to get a hold of us. There are multiple ways of doing this.</p>
+            <div class="large">
+                <form action="../hotel/thankyoucon.html" id="contactus">
+                    <h4>Contact us via this site.</h4>
+                    <div class="form">
+                        <label for="name">Full Name<span class="required">*</span>:</label>
+                        <input name="name" id="name" required class="contactinput" pattern="[A-za-z].{5,}">
+                    </div>
+                    <div class="form">
+                        <label for="email">Email<span class="required">*</span>:</label>
+                        <input name="email" id="email" type="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form">
+                        <label for="telephone">Telephone:</label>
+                        <input name="telephone" id="telephone" type="tel">
+                    </div>
+                    <div class="form">
+                        <label for="questions">Questions:</label> 
+                        <textarea id="questions" name="questions"></textarea>
+                    </div>
+                    <div class="form">
+                        <p>Fields marked with <span class="required">*</span> are required.<br>
+                        <input id="submit" name="submit" type="submit"></p>
+                    </div>
+                </form>
+                <div id="phone">
+                    <h4>Contact us via the phone 1-888-555-3456</h4>
+                    <img src="images/phone.jpg" alt="Old Fashioned Phone">
+                </div>
+                <h4 id="mail">Contact us via mail or in person</h4>
+                <div id="addressinfo">
+                    <p>Our home office is located in Bethesda, MD</p>
+                    <address>
+                        Temple Inn & Suites<br>
+                        4800 Montgomery Ln #300<br>
+                        Bethesda, MD 20814
+                    </address>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028514!2d-77.09772048488797!3d38.98325594948416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554387640557!5m2!1sen!2sus" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer>
+            <p id="pageowner">&copy;<span id="currentdate"></span> | Nina Saunders CIT 230 | <a href="../hotel/index.html">Temple Inn & Suites</a> | <a href="../hotel/contactus.html">Contact Us</a> | <a href="../hotel/attribution.html">Attribution</a></p>      
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>

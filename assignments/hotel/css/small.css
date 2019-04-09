@@ -1,0 +1,245 @@
+* {
+	margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-flow: nowrap;
+    background: #466c98;
+    color: #FFF;
+    justify-content: center;
+}
+
+header h1 {
+    justify-content: left;
+}
+
+header>img {
+    max-width: 6em;
+    max-height: 5em;
+    justify-content: right;
+    margin: 10px;
+}
+/*---Navigation Syling---*/
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: rgba(0,0,0,0.5);
+}
+
+nav{
+    background: #B6E4D5;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    }  
+
+nav ul.hide, #readmore.hide {display:none;}
+
+nav ul li a {
+    display: flex;
+    flex-flow: column;
+    padding: .8rem 2%;
+    text-decoration: none;
+    text-align: center;
+    color: #004400;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li .active {
+    background-color: rgba(70,108,152,.7);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(70,108,152,0.4);
+    color: #fff;
+}
+/*End of Nav Styling*/
+
+h1, h2, h3, nav {
+    font-family: 'Merienda', cursive;
+}
+
+h2, h3 {
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+h2 + p {
+    padding: 0 1em 1em 1em;
+    font-size: 1em;
+}
+
+main>p, h4 {
+    padding: 1em;
+    font-size: 1.2em;
+    font-style: italic;
+    max-width: 600px;
+}
+
+
+body {
+	background-color: #d2e7ff48;
+    font-family: 'Istok Web', sans-serif;
+	color: #11365F;
+}
+
+picture>img {
+    width: 100%;
+}
+
+
+.border {
+    margin: 10px auto;
+    max-width: 500px;
+    background: #fff;
+    border: 1px solid grey;
+}
+
+.col2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    margin: 2px;
+    padding: .75em 0;
+}
+
+footer {
+    background-color: #B6E4D5;
+    color: #0A6145;
+    padding: 1em;
+}
+ol {
+    padding-left: 5em;
+    margin: 0 auto;
+}
+li {
+    text-align: left;
+}
+
+.required {
+    color: red;
+}
+
+.form {
+    font-size: 1.1em;
+    margin: 0 auto;
+    padding: .3em 1em;
+}
+.form label{
+    display: block;
+    font-size: .9em;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form input{
+    display: block;
+    font-size: .9em;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#submit {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    color: #11365F;
+    width: 100px;
+    height: 40px;
+    font-family: 'Merienda', cursive;
+    border-radius: 5px;
+}
+
+#phone img {
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.5);
+}
+
+address {
+    padding: 1em;
+}
+
+#addressinfo {
+    padding: 1em;
+}
+
+.tyimg {
+    margin-bottom: 3em;
+}
+
+#contactinfo, #reservationinfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contactinfo>div, #reservationinfo>div {
+    padding-bottom: 1em;
+}
+
+#contactinfo label, #reservationinfo label {
+    display: block;
+    text-align: left;
+}
+
+#accommodations label, #accommodations textarea{
+    display: block;
+    margin: 0 auto;
+}
+
+#accommodations textarea{
+    text-align: left;
+}
+
+#contactinfo input {
+    width: 250px;
+    border-radius: 15px;
+}
+
+#reservationinfo input, #reservationinfo select {
+    width: 150px;
+    border-radius: 15px;
+}
+
+#comments {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.smallspotlight {
+    max-width: 20em;
+}
+
+.smallspotlight p {
+    padding: 0 1em 1em 1em;
+}
+.col2medium p {
+    padding: 2em;
+}
+
+.services {
+    padding-bottom: 1em;
+}
+
+.services li {
+    padding-bottom: .3em;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
