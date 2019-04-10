@@ -238,6 +238,12 @@ address {
     padding-bottom: .3em;
 }
 
+.widepic source, .widepic img {
+    width: 500px;
+    height: 200px;
+    padding: 1em;
+}
+
 .clearfix:after {
 	content: "";
 	display: table;

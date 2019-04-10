@@ -19,11 +19,15 @@ function showTempleInfo(jsonObj){
             var myP2 = document.createElement('p');
             var myP3 = document.createElement('p');
             var myH3a = document.createElement('h3');
+            //var myUl = document.createElement('ul');
+            //var myLi = document.createElement('li');
             var myP4 = document.createElement('p');
             var myH3b = document.createElement('h3');
             var myP5 = document.createElement('p');
             var myH3c = document.createElement('h3');
-            var myP6 = document.createElement('p');
+            var myP6a = document.createElement('p');
+            var myP6b = document.createElement('p');
+            var myP6c = document.createElement('p');
             var myH3d = document.createElement('h3');
             var myP7 = document.createElement('p');
             //var mytempleInfo = document.createElement('div');
@@ -43,9 +47,14 @@ function showTempleInfo(jsonObj){
             myH3a.textContent = "Services";
             var servList = templeName[i].services;
             var fullServices = "";
+            //var liServices = document.createElement('li');
             for (var j = 0; j < servList.length; j++){
-                fullServices += templeName[i].services[j]+", ";
+                //var liServices = document.createElement('li');
+                //liServices += templeName[i].services[j];
+                fullServices += templeName[i].services[j]+ ", ";
             }
+            //myLi.textContent = liServices;
+            //myLi.textContent = fullServices;
             myP4.textContent = fullServices;
 
             myH3b.textContent = "History";
@@ -62,25 +71,29 @@ function showTempleInfo(jsonObj){
             var schedList = templeName[i].sessionSchedule;
             var fullSchedule = "";
             for (var j = 0; j < schedList.length; j++){
-                fullSchedule += templeName[i].sessionSchedule[j]+", ";
+                fullSchedule += templeName[i].sessionSchedule.monday;
             }
             myP6.textContent = fullSchedule;
 */
-
+            myP6a.textContent = templeName[i].ordinanceSchedule;
+           // myP6b.textContent = "Sundays & Mondays: "+templeName[i].sessionSchedule[0].sunday;
+            //myP6c.textContent = "Tuesdays: "+templeName[i].sessionSchedule[2].tuesday[0];
+            
             myH3d.textContent = "Closures";
-//NEET TO FIGURE OUT THE CLOSURE LIST ON THIS ONE
 
+//NEET TO FIGURE OUT THE CLOSURE LIST ON THIS ONE
+/*
             var closeList = templeName[i].templeClosure;
             var fullClosure = "";
             for (var j = 0; j < closeList.length; j++){
-                fullClosure += templeName[i].templeClosure[j];
+                fullClosure += templeName[i].templeClosure[j].year2019[j];
             }
             myP7.textContent = fullClosure;
-
+*/
             myContainer.setAttribute("class", "templeContainer");
             //mytempleInfo.setAttribute("class", "templeInfo");    
             myImg.setAttribute("src", "images/phone.jpg");
-            myImg.setAttribute("alt", "Soda Springs Town Picture")
+            myImg.setAttribute("alt", "Test Picture")
             
             //myContainer.appendChild(mytempleInfo)
             myContainer.appendChild(myH2);
@@ -89,11 +102,15 @@ function showTempleInfo(jsonObj){
             myContainer.appendChild(myP2);
             myContainer.appendChild(myP3);
             myContainer.appendChild(myH3a);
+            //myContainer.appendChild(myUl);
+            //myUl.appendChild(myLi);
             myContainer.appendChild(myP4);
             myContainer.appendChild(myH3b);
             myContainer.appendChild(myP5);
             myContainer.appendChild(myH3c);
-            myContainer.appendChild(myP6);
+            myContainer.appendChild(myP6a);
+            myContainer.appendChild(myP6b);
+            myContainer.appendChild(myP6c);
             myContainer.appendChild(myH3d);
             myContainer.appendChild(myP7);
             templeDiv.appendChild(myContainer);
