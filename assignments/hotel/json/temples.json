@@ -96,35 +96,6 @@
             }
         },
         {
-            "name": "Columbia River Washington Temple",
-            "address": ["969 Gage Blvd", "Richland, WA 99352"],
-            "telephone":"(1) 509-628-0990",
-            "email":"Log into lds.org for email information",
-            "services":["No clothing rental available","No cafetria available","No patron housing available","Distribution center nearby"],
-            "history":["2 April 2000 - Announced", "28 October 2000 - Groundbreaking", "18 November 2001 - Dedicated"],
-            "ordinanceSchedule":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 509-628-0990",
-            "sessionSchedule":{
-                "day":[
-                    {"sunday":"closed"},
-                    {"monday":"closed"},
-                    {"tuesday":["8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]},
-                    {"wednesday":["6:00 AM","8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]},
-                    {"thursday":["8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]},
-                    {"friday":["8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]},
-                    {"saturday":["6:00 AM","8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]}
-                ]
-            },
-            "templeClosure":{
-                "2019":[
-                    "Thursday, 4 July 2019",
-                    "Tuesday, 10 September 2019 - Monday, 21 October 2019",
-                    "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
-                    "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-                    "Tuesday, 31 December 2019 - Wednesday, 1 January 2020"
-                ]
-            }
-        },
-        {
             "name": "Idaho Falls Idaho Temple",
             "address": ["1000 Memorial Dr", "Idaho Falls, ID 83402"],
             "telephone":"(1) 208-522-7669",
