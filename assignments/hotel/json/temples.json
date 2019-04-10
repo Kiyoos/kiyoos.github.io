@@ -8,17 +8,15 @@
         "services":["No clothing rental available","No cafetria available","No patron housing available","Distribution center nearby"],
         "history":["13 August 1998 - Announced", "10 October 1998 - Groundbreaking", "21 August 1999 - Dedicated"],
         "ordinanceSchedule":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 509-926-2824",
-        "sessionSchedule":{
-            "day":[
+        "sessionSchedule":[
                 {"sunday":"closed"},
                 {"monday":"closed"},
-                {"tuesday":["8:30 AM","10:00 AM","11:30 AM","12:30 PM","3:00 PM","4:30 PM","6:00 PM","7:00 PM"]},
+                {"tuesday":  ["8:30 AM","10:00 AM","11:30 AM","12:30 PM","3:00 PM","4:30 PM","6:00 PM","7:00 PM"]},
                 {"wednesday":["6:00 AM","7:30AM","9:00 AM","11:00 AM","12:30 PM","2:00 PM","4:00 PM","5:30 PM","6:30 PM"]},
-                {"thursday":["8:30 AM","10:00 AM","11:30 AM","12:30 PM","3:00 PM","4:30 PM","6:00 PM","7:00 PM"]},
-                {"friday":["8:30 AM","10:00 AM","11:30 AM","12:30 PM","3:00 PM","4:30 PM","6:00 PM","7:00 PM"]},
-                {"saturday":["6:00 AM","7:30AM","9:00 AM","11:00 AM","12:30 PM","2:00 PM","4:00 PM","5:30 PM","6:30 PM"]}
-            ]
-        },
+                {"thursday": ["8:30 AM","10:00 AM","11:30 AM","12:30 PM","3:00 PM","4:30 PM","6:00 PM","7:00 PM"]},
+                {"friday":   ["8:30 AM","10:00 AM","11:30 AM","12:30 PM","3:00 PM","4:30 PM","6:00 PM","7:00 PM"]},
+                {"saturday": ["6:00 AM","7:30AM","9:00 AM","11:00 AM","12:30 PM","2:00 PM","4:00 PM","5:30 PM","6:30 PM"]}
+            ],
         "templeClosure":[
             {
                 "2019":[
