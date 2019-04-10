@@ -67,17 +67,17 @@ function showTempleInfo(jsonObj){
 
             myH3c.textContent = "Schedule";
 //NEED TO FIGURE OUT THE DAYS IN THIS ONE
-/*
+
             var schedList = templeName[i].sessionSchedule;
             var fullSchedule = "";
             for (var j = 0; j < schedList.length; j++){
-                fullSchedule += templeName[i].sessionSchedule.monday;
+                fullSchedule += templeName[i].sessionSchedule[j];
             }
-            myP6.textContent = fullSchedule;
-*/
+            myP6b.textContent = fullSchedule;
+
             myP6a.textContent = templeName[i].ordinanceSchedule;
            // myP6b.textContent = "Sundays & Mondays: "+templeName[i].sessionSchedule[0].sunday;
-            //myP6c.textContent = "Tuesdays: "+templeName[i].sessionSchedule[2].tuesday[0];
+            //myP6c.textContent = templeName[i].sessionSchedule[2].tuesday[0];
             
             myH3d.textContent = "Closures";
 

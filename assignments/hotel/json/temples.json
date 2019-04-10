@@ -9,111 +9,97 @@
         "history":["13 August 1998 - Announced", "10 October 1998 - Groundbreaking", "21 August 1999 - Dedicated"],
         "ordinanceSchedule":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 509-926-2824",
         "sessionSchedule":[
-            "Closed", "Closed", 
-            "8:30 AM, 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 4:30 PM, 6:00 PM, 7:00 PM",
-            "6:00 AM, 7:30AM, 9:00 AM, 11:00 AM, 12:30 PM, 2:00 PM, 4:00 PM, 5:30 PM, 6:30 PM",
-            "8:30 AM, 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 4:30 PM, 6:00 PM, 7:00 PM",
-            "8:30 AM, 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 4:30 PM, 6:00 PM, 7:00 PM",
-            "6:00 AM, 7:30AM, 9:00 AM, 11:00 AM, 12:30 PM, 2:00 PM, 4:00 PM, 5:30 PM, 6:30 PM"
+            "Sundays: Closed", "Mondays: Closed", 
+            "Tuesday: 8:30 AM, 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 4:30 PM, 6:00 PM, 7:00 PM",
+            "Wednesday: 6:00 AM, 7:30AM, 9:00 AM, 11:00 AM, 12:30 PM, 2:00 PM, 4:00 PM, 5:30 PM, 6:30 PM",
+            "Thursday: 8:30 AM, 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 4:30 PM, 6:00 PM, 7:00 PM",
+            "Friday: 8:30 AM, 10:00 AM, 11:30 AM, 12:30 PM, 3:00 PM, 4:30 PM, 6:00 PM, 7:00 PM",
+            "Saturday: 6:00 AM, 7:30AM, 9:00 AM, 11:00 AM, 12:30 PM, 2:00 PM, 4:00 PM, 5:30 PM, 6:30 PM"
             ],
         "templeClosure":[
-                    "Monday, 1 April 2019 - Monday, 22 April 2019",
-                    "Thursday, 4 July 2019",
-                    "Monday, 30 September 2019 - Monday, 14 October 2019",
-                    "Wednesday, 27 November 2019 (Limited Hours)",
-                    "Thursday, 28 November 2019",
-                    "Tuesday, 24 December 2019",
-                    "Wednesday, 25 December 2019",
-                    "Tuesday, 31 December 2019 (Limited Hours)",
-                    "Wednesday, 1 January 2020"
+            "Monday, 1 April 2019 - Monday, 22 April 2019",
+            "Thursday, 4 July 2019",
+            "Monday, 30 September 2019 - Monday, 14 October 2019",
+            "Wednesday, 27 November 2019 (Limited Hours)",
+            "Thursday, 28 November 2019",
+            "Tuesday, 24 December 2019",
+            "Wednesday, 25 December 2019",
+            "Tuesday, 31 December 2019 (Limited Hours)",
+            "Wednesday, 1 January 2020"
             ]
         },
         {
-            "name": "Columbia River Washington Temple",
-            "address": ["969 Gage Blvd", "Richland, WA 99352"],
-            "telephone":"(1) 509-628-0990",
-            "email":"Log into lds.org for email information",
-            "services":["No clothing rental available","No cafetria available","No patron housing available","Distribution center nearby"],
-            "history":["2 April 2000 - Announced", "28 October 2000 - Groundbreaking", "18 November 2001 - Dedicated"],
-            "ordinanceSchedule":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 509-628-0990",
-            "sessionSchedule":{
-                "day":[
-                    {"sunday":"closed"},
-                    {"monday":"closed"},
-                    {"tuesday":["8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]},
-                    {"wednesday":["6:00 AM","8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]},
-                    {"thursday":["8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]},
-                    {"friday":["8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]},
-                    {"saturday":["6:00 AM","8:00 AM","8:30 AM","10:00 AM", "12:00 PM", "12:30 PM", "2:00 PM","4:00 PM","4:30 PM","6:30 PM","7:00 PM"]}
-                ]
-            },
-            "templeClosure":{
-                "2019":[
-                    "Thursday, 4 July 2019",
-                    "Tuesday, 10 September 2019 - Monday, 21 October 2019",
-                    "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
-                    "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-                    "Tuesday, 31 December 2019 - Wednesday, 1 January 2020"
-                ]
-            }
+        "name": "Columbia River Washington Temple",
+        "address": ["969 Gage Blvd", "Richland, WA 99352"],
+        "telephone":"(1) 509-628-0990",
+        "email":"Log into lds.org for email information",
+        "services":["No clothing rental available","No cafetria available","No patron housing available","Distribution center nearby"],
+        "history":["2 April 2000 - Announced", "28 October 2000 - Groundbreaking", "18 November 2001 - Dedicated"],
+        "ordinanceSchedule":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 509-628-0990",
+        "sessionSchedule":[
+            "Sundays: Closed", "Mondays: Closed", 
+            "Tuesdays: 8:00 AM, 8:30 AM, 10:00 AM, 12:00 PM, 12:30 PM, 2:00 PM, 4:00 PM, 4:30 PM, 6:30 PM, 7:00 PM",
+            "Wednesdays: 6:00 AM,8:00 AM, 8:30 AM, 10:00 AM, 12:00 PM, 12:30 PM, 2:00 PM, 4:00 PM, 4:30 PM, 6:30 PM, 7:00 PM",
+            "Thursdays: 8:00 AM, 8:30 AM, 10:00 AM, 12:00 PM, 12:30 PM, 2:00 PM, 4:00 PM, 4:30 PM, 6:30 PM, 7:00 PM",
+            "Fridays: 8:00 AM, 8:30 AM, 10:00 AM, 12:00 PM, 12:30 PM, 2:00 PM, 4:00 PM, 4:30 PM, 6:30 PM, 7:00 PM",
+            "Saturday: 6:00 AM,8:00 AM, 8:30 AM, 10:00 AM, 12:00 PM, 12:30 PM, 2:00 PM, 4:00 PM, 4:30 PM, 6:30 PM, 7:00 PM"
+            ],
+        "templeClosure":[
+            "Thursday, 4 July 2019",
+            "Tuesday, 10 September 2019 - Monday, 21 October 2019",
+            "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+            "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+            "Tuesday, 31 December 2019 - Wednesday, 1 January 2020"
+            ]
         },
         {
-            "name": "Seattle Washington Temple",
-            "address": ["2808 148th Ave SE", "Bellevue, WA 98007"],
-            "telephone":"(1) 425-643-5144",
-            "email":"Log into lds.org for email information",
-            "services":["Clothing rental available","Cafetria available","No patron housing available","Distribution center nearby"],
-            "history":["15 November 1975 - Announced", "27 May 1978 - Groundbreaking", "17 November 1980 - Dedicated"],
-            "ordinanceSchedule":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 425-643-5144",
-            "sessionSchedule":{
-                "day":[
-                    {"sunday":"closed"},
-                    {"monday":"closed"},
-                    {"tuesday":["5:30 AM","6:30 AM","8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM","6:00 AM","6:30 PM","7:00 PM","7:30 PM"]},
-                    {"wednesday":["5:30 PM","8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00PM","4:00 PM","5:00 PM","6:00 PM","6:30 PM","7:00 PM","7:30 PM"]},
-                    {"thursday":["8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM","6:00 AM","6:30 PM","7:00 PM","7:30 PM"]},
-                    {"friday":["8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM","6:00 AM","6:30 PM","7:00 PM","7:30 PM"]},
-                    {"saturday":["6:00 AM","6:30 AM","7:00 AM","8:00 AM","8:30 AM","9:00 AM","10:00 AM","10:30 AM","11:00 AM","11:30 AM","12:30 PM","1:00 PM","1:30 PM","2:00 PM","3:00 PM","4:00 PM","4:30 PM","5:00 PM","6:00 AM","6:30 PM","7:00 PM","7:30 PM"]}
-                ]
-            },
-            "templeClosure":{
-                "2019":[
-                    "Thursday, 4 July 2019",
-                    "Sunday, 18 August 2019 - Monday, 2 September 2019",
-                    "Saturday, 5 October 2019",
-                    "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
-                    "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
-                ]
-            }
+        "name": "Seattle Washington Temple",
+        "address": ["2808 148th Ave SE", "Bellevue, WA 98007"],
+        "telephone":"(1) 425-643-5144",
+        "email":"Log into lds.org for email information",
+        "services":["Clothing rental available","Cafetria available","No patron housing available","Distribution center nearby"],
+        "history":["15 November 1975 - Announced", "27 May 1978 - Groundbreaking", "17 November 1980 - Dedicated"],
+        "ordinanceSchedule":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 425-643-5144",
+        "sessionSchedule":[
+            "Sundays: Closed", "Mondays: Closed",
+            "Tuesdays: 5:30 AM, 6:30 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00 PM, 4:00 PM, 5:00 PM, 6:00 AM, 6:30 PM, 7:00 PM, 7:30 PM",
+            "Wednesday: 5:30 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00PM, 4:00 PM, 5:00 PM, 6:00 PM, 6:30 PM, 7:00 PM, 7:30 PM",
+            "Thursdays: 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00 PM, 4:00 PM, 5:00 PM, 6:00 AM, 6:30 PM, 7:00 PM, 7:30 PM",
+            "Fridays: 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00 PM, 4:00 PM, 5:00 PM, 6:00 AM, 6:30 PM, 7:00 PM, 7:30 PM",
+            "Saturdays: 6:00 AM, 6:30 AM, 7:00 AM, 8:00 AM, 8:30 AM, 9:00 AM, 10:00 AM, 10:30 AM, 11:00 AM, 11:30 AM, 12:30 PM, 1:00 PM, 1:30 PM, 2:00 PM, 3:00 PM, 4:00 PM, 4:30 PM, 5:00 PM, 6:00 AM, 6:30 PM, 7:00 PM, 7:30 PM"
+            ],
+        "templeClosure":[
+            "Thursday, 4 July 2019",
+            "Sunday, 18 August 2019 - Monday, 2 September 2019",
+            "Saturday, 5 October 2019",
+            "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+            "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
+            ]
+            
         },
         {
-            "name": "Idaho Falls Idaho Temple",
-            "address": ["1000 Memorial Dr", "Idaho Falls, ID 83402"],
-            "telephone":"(1) 208-522-7669",
-            "email":"Log into lds.org for email information",
-            "services":["Clothing rental available","Cafetria available","No patron housing available","Distribution center nearby"],
-            "history":["3 March 1937 - Announced", "19 December 1939 - Groundbreaking", "23 Septemer 1945 - Dedicated", "4 June 2017 - Rededicated"],
-            "ordinanceSchedule":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 208-522-7669",
-            "sessionSchedule":{
-                "day":[
-                    {"sunday":"closed"},
-                    {"monday":"closed"},
-                    {"tuesday":["5:00 AM","6:00 AM","7:00 PM","8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM","6:00 AM","7:00 PM"]},
-                    {"wednesday":["6:00 AM","7:00 PM","8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM","6:00 AM","7:00 PM","8:00 AM"]},
-                    {"thursday":["6:00 AM","7:00 PM","8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM","6:00 AM","7:00 PM","8:00 AM"]},
-                    {"friday":["6:00 AM","7:00 PM","8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM","6:00 AM","7:00 PM","8:00 AM"]},
-                    {"saturday":["6:00 AM","7:00 PM","8:00 AM","9:00 AM","10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM"]}
-                ]
-            },
-            "templeClosure":{
-                "2019":[
-                    "Thursday, 4 July 2019",
-                    "Sunday, 18 August 2019 - Monday, 2 September 2019",
-                    "Saturday, 5 October 2019",
-                    "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
-                    "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
-                ]
-            }
+        "name": "Idaho Falls Idaho Temple",
+        "address": ["1000 Memorial Dr", "Idaho Falls, ID 83402"],
+        "telephone":"(1) 208-522-7669",
+        "email":"Log into lds.org for email information",
+        "services":["Clothing rental available","Cafetria available","No patron housing available","Distribution center nearby"],
+        "history":["3 March 1937 - Announced", "19 December 1939 - Groundbreaking", "23 Septemer 1945 - Dedicated", "4 June 2017 - Rededicated"],
+        "ordinanceSchedule":"To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 208-522-7669",
+        "sessionSchedule":[
+            "Sundays: Closed", "Mondays: Closed",
+            "Tuesdays: 5:00 AM, 6:00 AM, 7:00 PM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00 PM, 4:00 PM, 5:00 PM, 6:00 AM, 7:00 PM",
+            "Wednesdays: 6:00 AM, 7:00 PM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00 PM, 4:00 PM, 5:00 PM, 6:00 AM, 7:00 PM, 8:00 AM",
+            "Thursdays: 6:00 AM, 7:00 PM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00 PM, 4:00 PM, 5:00 PM, 6:00 AM, 7:00 PM, 8:00 AM",
+            "Fridays: 6:00 AM, 7:00 PM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00 PM, 4:00 PM, 5:00 PM, 6:00 AM, 7:00 PM, 8:00 AM",
+            "Saturdays: 6:00 AM, 7:00 PM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00 PM, 4:00 PM, 5:00 PM"
+            ],
+        "templeClosure":[
+            "Thursday, 4 July 2019",
+            "Sunday, 18 August 2019 - Monday, 2 September 2019",
+            "Saturday, 5 October 2019",
+            "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+            "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
+            ]
         }
     ]
 }
