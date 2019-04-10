@@ -67,16 +67,16 @@ function showTempleInfo(jsonObj){
             myP6.textContent = fullSchedule;
 */
 
-            myH3a.textContent = "Closures";
+            myH3d.textContent = "Closures";
 //NEET TO FIGURE OUT THE CLOSURE LIST ON THIS ONE
-/*
+
             var closeList = templeName[i].templeClosure;
             var fullClosure = "";
             for (var j = 0; j < closeList.length; j++){
-                fullClosure += templeName[i].templeClosure[j].2019 ", ";
+                fullClosure += templeName[i].templeClosure[j];
             }
-            myP6.textContent = fullClosure;
-*/
+            myP7.textContent = fullClosure;
+
             myContainer.setAttribute("class", "templeContainer");
             //mytempleInfo.setAttribute("class", "templeInfo");    
             myImg.setAttribute("src", "images/phone.jpg");

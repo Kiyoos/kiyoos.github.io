@@ -19,7 +19,7 @@
             ],
         "templeClosure":[
             {
-                "2019":[
+                "year2019":[
                     "Monday, 1 April 2019 - Monday, 22 April 2019",
                     "Thursday, 4 July 2019",
                     "Monday, 30 September 2019 - Monday, 14 October 2019",
@@ -31,7 +31,7 @@
                 ]
             },
             {
-                "2020": "Wednesday, 1 January 2020"
+                "year2020": "Wednesday, 1 January 2020"
             }
         ]
         },
