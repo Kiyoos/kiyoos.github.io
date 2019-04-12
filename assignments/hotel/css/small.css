@@ -244,6 +244,43 @@ address {
     padding: 1em;
 }
 
+.templeinfo {
+    max-width: 550px;
+    padding-bottom: .5em;
+}
+
+.templeinfo img {
+    max-width:300px;
+}
+
+#temples ul {
+    list-style-type: none;
+    padding-left: .2em;
+}
+
+#temples li {
+    padding: .5em;
+}
+
+.col2 div {
+    margin: .2em;
+}
+
+#temples .tempaddress li {
+    padding: 0 .5em;
+    margin: 0 auto;
+}
+
+#temples h3 {
+    padding-top: 2em;
+    border: 2px solid red;
+}
+
+.nametemp {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+}
+
 .clearfix:after {
 	content: "";
 	display: table;

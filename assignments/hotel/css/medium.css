@@ -74,10 +74,6 @@
 		width: 20em;
 	}
 
-	h4 + p {
-		min-width: 200em;
-	}
-
 	.col2medium {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -101,6 +97,11 @@
 
 	#reservations {
 		max-width: 650px;
+	}
+
+	.border img {
+		box-sizing: border-box;
+		padding-top: .5em;
 	}
 
 }
