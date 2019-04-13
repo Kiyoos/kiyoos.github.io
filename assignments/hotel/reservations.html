@@ -9,8 +9,9 @@
       <link rel="stylesheet" href="css/small.css">
       <link rel="stylesheet" href="css/medium.css">  
       <link rel="stylesheet" href="css/large.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web|Merienda" >
-   </head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda">
+ </head>
    <body>
       <header>
             <img src="images/templelogo.png" alt="Temple Silhouette Logo" >
@@ -45,21 +46,21 @@
                   </div>
                   <div>
                      <label for="state">State/Country</label>
-                     <input name="state" id="state" type="state"pattern="[A-za-z].{4,}">
+                     <input name="state" id="state" pattern="[A-za-z].{4,}">
                   </div>
             </div>
             <div id="reservationinfo">
                <div>
                   <label for="checkin">Check-in:</label>
-                  <input name="checkin" type="date">
+                  <input name="checkin" id="checkin" type="date">
                </div>
                <div>
                   <label for="checkout">Check-out:</label>
-                  <input name="checkout" type="date">
+                  <input name="checkout" id="checkout" type="date">
                </div>
                <div>
                   <label for="temple">Inn Location:</label>
-                  <input name="temple" list="location">
+                  <input name="temple" id="temple" list="location">
                      <datalist id="location">
                         <option value="Bellvue, WA"></option>
                         <option value="Idaho Falls, ID"></option>
@@ -67,9 +68,9 @@
                         <option value="Spokane, WA"></option>
                      </datalist>
                </div>
-               <div id="numrooms">
+               <div>
                   <label for="numrooms">Number of Rooms</label>
-                  <input name="numrooms" type="number">
+                  <input name="numrooms" id="numrooms" type="number">
                </div>
                <div>
                   <label for="roomtype">Type of Room(s):</label>
