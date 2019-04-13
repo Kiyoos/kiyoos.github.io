@@ -96,7 +96,7 @@ picture>img {
 }
 
 
-.border {
+.border, .piclink {
     margin: 10px auto;
     max-width: 500px;
     background: #fff;
@@ -112,7 +112,7 @@ picture>img {
 }
 
 footer {
-    background-color: #B6E4D5;
+    background-color: rgba(215,245,195,0.5);
     color: #0A6145;
     padding: 1em;
 }
@@ -269,16 +269,26 @@ address {
 #temples .tempaddress li {
     padding: 0 .5em;
     margin: 0 auto;
+
 }
 
 #temples h3 {
     padding-top: 2em;
-    border: 2px solid red;
 }
 
 .nametemp {
     display: grid;
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+.center li {
+    margin-left: 100px;
+    justify-self: center;
+}
+
+.tempaddress li {
+    margin: 0 auto;
+    max-width: 160px;
 }
 
 .clearfix:after {

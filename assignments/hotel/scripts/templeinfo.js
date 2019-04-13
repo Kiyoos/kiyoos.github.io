@@ -27,7 +27,6 @@ function showTempleInfo(jsonObj){
         var myImgT = document.createElement('img');
         var myP1 = document.createElement('p');
         var myP2 = document.createElement('p');
-        var myP3 = document.createElement('p');
         var myH4a = document.createElement('h4');
         var myH4b = document.createElement('h4');
         var myH4c = document.createElement('h4');
@@ -36,7 +35,8 @@ function showTempleInfo(jsonObj){
 
         myDiv1.setAttribute("class", "border templeinfo");
         myDiv2.setAttribute("class","nametemp");
-        myDiv6.setAttribute("class", "col2");
+        myDiv4.setAttribute("class","picinfo");
+        myDiv6.setAttribute("class", "center");
         myH3.textContent = templeName[i].name;
 
 //ADDRESSS CODE
@@ -51,74 +51,90 @@ function showTempleInfo(jsonObj){
 
 //CURRENT WEATHER CODE
         var correctName = templeName[i].name;
-        var apiURLstring = "";
         if (correctName == "Spokane Washington Temple") {
             myImgT.setAttribute("src", "images/spokanetempleday500.jpg");
             myImgT.setAttribute("alt", "Spokane Temple")
             myPw1.setAttribute("id","spo-temp");
             myImgW.setAttribute("id","spo-img");
-            apiURLstring = "https://api.openweathermap.org/data/2.5/weather?zip=99206&units=imperial&APPID=cc37759cf1ea1a86889a1de5b1352725";
         } else if(correctName == "Columbia River Washington Temple") {
             myImgT.setAttribute("src", "images/columbiarivertemple500.jpg");
             myImgT.setAttribute("alt", "Columbia River Temple");
             myPw1.setAttribute("id","colriv-temp");
             myImgW.setAttribute("id","colriv-img");
-            apiURLstring = "https://api.openweathermap.org/data/2.5/weather?zip=99352&units=imperial&APPID=cc37759cf1ea1a86889a1de5b1352725";
         } else if(correctName == "Seattle Washington Temple") {
             myImgT.setAttribute("src", "images/seattletemple500.jpg");
             myImgT.setAttribute("alt", "Seattle Temple");
             myPw1.setAttribute("id","sea-temp");
             myImgW.setAttribute("id","sea-img");
-            apiURLstring = "https://api.openweathermap.org/data/2.5/weather?zip=98007&units=imperial&APPID=cc37759cf1ea1a86889a1de5b1352725";
         } else {
             myImgT.setAttribute("src", "images/idahofallstemple500.jpg");
             myImgT.setAttribute("alt", "Idaho Falls Temple")
             myPw1.setAttribute("id","if-temp");
             myImgW.setAttribute("id","if-img");
-            apiURLstring = "https://api.openweathermap.org/data/2.5/weather?zip=83402&units=imperial&APPID=cc37759cf1ea1a86889a1de5b1352725";
         } 
                 
         myPw2.textContent = "Current Temp";
 
-        var weatherRequest = new XMLHttpRequest();
-        weatherRequest.open('GET', apiURLstring, true);
-        weatherRequest.send();
-        weatherRequest.onload = function(){
-            var weatherData = JSON.parse(weatherRequest.responseText);
-            console.log(weatherData);
-           
-            var icon = "";
-            var altText = "";
-            if (correctName == "Spokane Washington Temple") {
-                icon = "https://openweathermap.org/img/w/"+ weatherData.weather[0].icon +".png";
-                altText = weatherData.weather[0].description;
-            } else if(correctName == "Columbia River Washington Temple") {
-                icon = "https://openweathermap.org/img/w/"+ weatherData.weather[0].icon +".png";
-                altText = weatherData.weather[0].description;
-            } else if(correctName == "Seattle Washington Temple") {
-                icon = "https://openweathermap.org/img/w/"+ weatherData.weather[0].icon +".png";
-                altText = weatherData.weather[0].description;
-            } else {
-                icon = "https://openweathermap.org/img/w/"+ weatherData.weather[0].icon +".png";
-                altText = weatherData.weather[0].description;
-            } 
-
-            document.getElementById("spo-temp").innerHTML = weatherData.main.temp;
-            document.getElementById('spo-img').setAttribute('src',icon);
-            document.getElementById('spo-img').setAttribute('alt',altText);
-            document.getElementById("colriv-temp").innerHTML = weatherData.main.temp;
-            document.getElementById('colriv-img').setAttribute('src',icon);
-            document.getElementById('colriv-img').setAttribute('alt',altText);
-            document.getElementById("sea-temp").innerHTML = weatherData.main.temp;
-            document.getElementById('sea-img').setAttribute('src',icon);
-            document.getElementById('sea-img').setAttribute('alt',altText);
-            document.getElementById("if-temp").innerHTML = weatherData.main.temp;
-            document.getElementById('if-img').setAttribute('src',icon);
-            document.getElementById('if-img').setAttribute('alt',altText);
+        if (correctName == "Spokane Washington Temple") {
+            var spoWeather = new XMLHttpRequest();
+            var spoApi = "https://api.openweathermap.org/data/2.5/weather?zip=99206&units=imperial&APPID=cc37759cf1ea1a86889a1de5b1352725";
+            spoWeather.open('GET', spoApi, true);
+            spoWeather.send();
+            spoWeather.onload = function(){
+                var spoWeatherData = JSON.parse(spoWeather.responseText);
+                console.log(spoWeatherData);
+                document.getElementById("spo-temp").innerHTML = spoWeatherData.main.temp+"&deg F";
+                var spoIcon = "https://openweathermap.org/img/w/"+ spoWeatherData.weather[0].icon +".png";
+                var spoAlt = spoWeatherData.weather[0].description;
+                document.getElementById('spo-img').setAttribute('src',spoIcon);
+                document.getElementById('spo-img').setAttribute('alt',spoAlt);
+            }
+        } else if(correctName == "Columbia River Washington Temple") {
+            var colRivWeather = new XMLHttpRequest();
+            var colRivApi = "https://api.openweathermap.org/data/2.5/weather?zip=99352&units=imperial&APPID=cc37759cf1ea1a86889a1de5b1352725";
+            colRivWeather.open('GET', colRivApi, true);
+            colRivWeather.send();
+            colRivWeather.onload = function(){
+                var colRivWeatherData = JSON.parse(colRivWeather.responseText);
+                console.log(colRivWeatherData);
+                document.getElementById("colriv-temp").innerHTML = colRivWeatherData.main.temp+"&deg F";
+                var colRivIcon = "https://openweathermap.org/img/w/"+ colRivWeatherData.weather[0].icon +".png";
+                var colRivAlt = colRivWeatherData.weather[0].description;
+                document.getElementById('colriv-img').setAttribute('src',colRivIcon);
+                document.getElementById('colriv-img').setAttribute('alt',colRivAlt);
+            }
+        } else if(correctName == "Seattle Washington Temple") {
+            var seaWeather = new XMLHttpRequest();
+            var seaApi = "https://api.openweathermap.org/data/2.5/weather?zip=98007&units=imperial&APPID=cc37759cf1ea1a86889a1de5b1352725";
+            seaWeather.open('GET', seaApi, true);
+            seaWeather.send();
+            seaWeather.onload = function(){
+                var seaWeatherData = JSON.parse(seaWeather.responseText);
+                console.log(seaWeatherData);
+                document.getElementById("sea-temp").innerHTML = seaWeatherData.main.temp+"&deg F";
+                var seaIcon = "https://openweathermap.org/img/w/"+ seaWeatherData.weather[0].icon +".png";
+                var seaAlt = seaWeatherData.weather[0].description;
+                document.getElementById('sea-img').setAttribute('src',seaIcon);
+                document.getElementById('sea-img').setAttribute('alt',seaAlt);
+            }
+        } else {
+            var ifWeather = new XMLHttpRequest();
+            var ifApi =  "https://api.openweathermap.org/data/2.5/weather?zip=83402&units=imperial&APPID=cc37759cf1ea1a86889a1de5b1352725";
+            ifWeather.open('GET', ifApi, true);
+            ifWeather.send();
+            ifWeather.onload = function(){
+                var ifWeatherData = JSON.parse(ifWeather.responseText);
+                console.log(ifWeatherData);
+                document.getElementById("if-temp").innerHTML = ifWeatherData.main.temp+"&deg F";
+                var ifIcon = "https://openweathermap.org/img/w/"+ ifWeatherData.weather[0].icon +".png";
+                var ifAlt = ifWeatherData.weather[0].description;
+                document.getElementById('if-img').setAttribute('src',ifIcon);
+                document.getElementById('if-img').setAttribute('alt',ifAlt);
+            }
         }
 
-        myP2.textContent = templeName[i].telephone;
-        myP3.textContent = templeName[i].email;
+        myP1.textContent = templeName[i].telephone;
+        myP2.textContent = templeName[i].email;
 
 //FINISHED SERVICES CODE        
         myH4a.textContent = "Services";
@@ -168,10 +184,12 @@ function showTempleInfo(jsonObj){
         myDiv3.appendChild(myImgW);
         myDiv3.appendChild(myPw1);
         myDiv3.appendChild(myPw2);
-        myDiv1.appendChild(myImgT);
-        myDiv1.appendChild(addressUL);
-        myDiv1.appendChild(myP2);
-        myDiv1.appendChild(myP3);
+        myDiv1.appendChild(myDiv4);
+        myDiv4.appendChild(myImgT);
+        myDiv4.appendChild(myDiv5);
+        myDiv5.appendChild(addressUL);
+        myDiv5.appendChild(myP1);
+        myDiv5.appendChild(myP2);
         myDiv6.appendChild(myDiv7);
         myDiv6.appendChild(myDiv8);
         myDiv1.appendChild(myDiv6);

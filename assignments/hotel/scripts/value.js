@@ -1,1 +1,0 @@
-function adjustSeverity(a){document.getElementById("severity").innerHTML=a};
